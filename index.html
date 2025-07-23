@@ -3,23 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>م.ابوبكر حسان - مهندس برمجيات متخصص</title>
+    <title>م. أبوبكر حسان | مهندس برمجيات وخبير تقني</title>
+    <meta name="description" content="مهندس برمجيات متخصص في تطوير حلول تقنية مبتكرة، مشاريع التخرج، الذكاء الاصطناعي وتطوير المواقع">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        primary: '#667eea',
-                        secondary: '#764ba2',
-                        accent: '#f093fb',
-                        success: '#4ade80',
-                        warning: '#fbbf24',
-                        danger: '#ef4444',
-                        dark: '#0f172a',
-                        'gray-850': '#1e293b'
+                        primary: {
+                            DEFAULT: '#4F46E5',
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            200: '#C7D2FE',
+                            300: '#A5B4FC',
+                            400: '#818CF8',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            800: '#3730A3',
+                            900: '#312E81'
+                        },
+                        secondary: {
+                            DEFAULT: '#7C3AED',
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95'
+                        },
+                        accent: {
+                            DEFAULT: '#EC4899',
+                            50: '#FDF2F8',
+                            100: '#FCE7F3',
+                            200: '#FBCFE8',
+                            300: '#F9A8D4',
+                            400: '#F472B6',
+                            500: '#EC4899',
+                            600: '#DB2777',
+                            700: '#BE185D',
+                            800: '#9D174D',
+                            900: '#831843'
+                        },
+                        dark: {
+                            DEFAULT: '#0F172A',
+                            50: '#F8FAFC',
+                            100: '#F1F5F9',
+                            200: '#E2E8F0',
+                            300: '#CBD5E1',
+                            400: '#94A3B8',
+                            500: '#64748B',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1E293B',
+                            900: '#0F172A'
+                        }
                     },
                     fontFamily: {
                         'cairo': ['Cairo', 'sans-serif'],
@@ -28,88 +85,187 @@
                         'float': 'float 3s ease-in-out infinite',
                         'pulse-slow': 'pulse 3s ease-in-out infinite',
                         'bounce-slow': 'bounce 2s ease-in-out infinite',
-                        'fade-in': 'fadeIn 0.8s ease-out',
-                        'slide-up': 'slideUp 0.8s ease-out',
-                        'scale-in': 'scaleIn 0.5s ease-out'
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'scale-in': 'scaleIn 0.5s ease-out forwards',
+                        'gradient-flow': 'gradient-flow 8s ease infinite alternate',
+                        'wave': 'wave 2s linear infinite'
+                    },
+                    keyframes: {
+                        wave: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '10%': { transform: 'rotate(14deg)' },
+                            '20%': { transform: 'rotate(-8deg)' },
+                            '30%': { transform: 'rotate(14deg)' },
+                            '40%': { transform: 'rotate(-4deg)' },
+                            '50%': { transform: 'rotate(10deg)' },
+                            '60%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(0deg)' }
+                        }
                     }
                 }
             }
         }
     </script>
+    
     <style>
-        body { font-family: 'Cairo', sans-serif; }
+        /* Base Styles */
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
         
+        /* Keyframe Animations */
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
         
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(50px); }
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
         @keyframes scaleIn {
-            from { opacity: 0; transform: scale(0.9); }
+            from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
         }
-        
-        .gradient-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .gradient-secondary {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-        
-        .gradient-success {
-            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .dark .glass-effect {
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .card-modern {
-            background: linear-gradient(145deg, #ffffff, #f8fafc);
-            border: 1px solid #e2e8f0;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .dark .card-modern {
-            background: linear-gradient(145deg, #1e293b, #0f172a);
-            border: 1px solid #334155;
-        }
-        
-        .card-modern:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-        
-        .service-icon {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            background-size: 200% 200%;
-            animation: gradient-shift 3s ease infinite;
-        }
-        
-        @keyframes gradient-shift {
+
+        @keyframes gradient-flow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
         
+        /* Gradient Backgrounds */
+        .gradient-primary {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            background-size: 200% 200%;
+            animation: gradient-flow 6s ease infinite alternate;
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, #EC4899 0%, #F472B6 100%);
+            background-size: 200% 200%;
+            animation: gradient-flow 6s ease infinite alternate;
+        }
+        
+        .gradient-success {
+            background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+            background-size: 200% 200%;
+            animation: gradient-flow 6s ease infinite alternate;
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+            background-size: 200% 200%;
+            animation: gradient-flow 6s ease infinite alternate;
+        }
+        
+        /* Glass Effect */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Modern Card Styles */
+        .card-modern {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .dark .card-modern {
+            background: #1E293B;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-modern:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .dark .card-modern:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Section Title Underline Effect */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.75rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #4F46E5, #EC4899);
+            border-radius: 2px;
+        }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #4F46E5, #EC4899, #10B981);
+            transform-origin: left;
+            transform: scaleX(0);
+            z-index: 9999;
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Navigation Link Hover Effect */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+            padding-bottom: 0.25rem;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #4F46E5, #EC4899);
+            transition: width 0.3s ease-out;
+            border-radius: 2px;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Project Card Specific Styles */
         .project-card {
             overflow: hidden;
             position: relative;
@@ -122,202 +278,327 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #667eea, #f093fb, #4ade80);
+            background: linear-gradient(90deg, #4F46E5, #EC4899, #10B981);
             transform: scaleX(0);
-            transition: transform 0.3s ease;
+            transform-origin: left;
+            transition: transform 0.4s ease-out;
         }
         
         .project-card:hover::before {
             transform: scaleX(1);
         }
         
+        /* Floating Shapes in Hero Section */
         .floating-shapes {
             position: absolute;
             width: 100%;
             height: 100%;
             overflow: hidden;
             z-index: -1;
+            opacity: 0.6;
         }
         
         .floating-shape {
             position: absolute;
-            background: linear-gradient(45deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.1));
+            background: linear-gradient(45deg, rgba(79, 70, 229, 0.15), rgba(236, 72, 153, 0.15));
             border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
+            animation: float 8s ease-in-out infinite;
+            filter: blur(40px);
         }
         
-        .nav-link {
+        /* Body Background */
+        .body-bg-light {
+            background-color: #F8FAFC;
+            background-image: 
+                radial-gradient(at 80% 20%, rgba(224, 231, 255, 0.5) 0px, transparent 50%),
+                radial-gradient(at 20% 80%, rgba(199, 210, 254, 0.3) 0px, transparent 50%);
+        }
+        
+        .dark .body-bg-dark {
+            background-color: #0F172A;
+            background-image: 
+                radial-gradient(at 80% 20%, rgba(30, 41, 59, 0.7) 0px, transparent 50%),
+                radial-gradient(at 20% 80%, rgba(15, 23, 42, 0.8) 0px, transparent 50%);
+        }
+        
+        /* Testimonial Card */
+        .testimonial-card {
             position: relative;
-            transition: all 0.3s ease;
+            overflow: hidden;
         }
         
-        .nav-link::after {
-            content: '';
+        .testimonial-card::before {
+            content: '"';
             position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #667eea, #f093fb);
-            transition: width 0.3s ease;
+            top: -20px;
+            right: 10px;
+            font-size: 120px;
+            color: rgba(79, 70, 229, 0.1);
+            font-family: serif;
+            line-height: 1;
+            z-index: 0;
         }
         
-        .nav-link:hover::after {
-            width: 100%;
+        .dark .testimonial-card::before {
+            color: rgba(199, 210, 254, 0.05);
         }
         
-        .section-title {
-            position: relative;
-            display: inline-block;
+        /* Skill Bar */
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #E2E8F0;
+            overflow: hidden;
         }
         
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #f093fb);
-            border-radius: 2px;
+        .dark .skill-bar {
+            background-color: #334155;
         }
         
-        .scroll-indicator {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #f093fb);
-            transform-origin: left;
-            transform: scaleX(0);
-            z-index: 9999;
-            transition: transform 0.1s ease;
+        .skill-progress {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #4F46E5, #7C3AED);
+            transition: width 1s ease-out;
         }
         
+        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .floating-shapes { display: none; }
+            .hero-profile-image {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .section-title::after {
+                width: 60px;
+                height: 3px;
+            }
         }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 12pt;
+            }
+            
+            .no-print {
+                display: none !important;
+            }
+            
+            a::after {
+                content: " (" attr(href) ")";
+                font-size: 0.8em;
+                font-weight: normal;
+            }
+        }
+        
+        
+    .card-modern {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}    
+        
+        
+        
     </style>
 </head>
 
-<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-gray-800 dark:text-gray-100">
+<body class="body-bg-light dark:body-bg-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
     <!-- Scroll Indicator -->
     <div class="scroll-indicator"></div>
     
-    <!-- Dark mode detection -->
-    <script>
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-            if (event.matches) {
-                document.documentElement.classList.add('dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-            }
-        });
-    </script>
-
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full glass-effect z-50 transition-all duration-300">
-        <div class="container mx-auto px-6 py-4">
+    <nav class="fixed top-0 w-full glass-effect z-50 transition-all duration-300 py-3 md:py-4">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center shadow-lg">
-                        <i class="fas fa-code text-white text-lg"></i>
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 md:space-x-4">
+                    <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
+                        <i class="fas fa-code text-white text-lg md:text-xl"></i>
                     </div>
                     <div>
-                        <div class="font-bold text-lg text-gray-800 dark:text-white">م. ابوبكر حسان</div>
-                        <div class="text-xs text-gray-500 dark:text-gray-400">مهندس برمجيات</div>
+                        <div class="font-bold text-base md:text-lg text-gray-800 dark:text-white">م. أبوبكر حسان</div>
+                        <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400">مهندس برمجيات</div>
                     </div>
                 </div>
                 
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary font-medium">الرئيسية</a>
-                    <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary font-medium">الخدمات</a>
-                    <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary font-medium">المشاريع</a>
-                    <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary font-medium">التواصل</a>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">الرئيسية</a>
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">عني</a>
+                    <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">الخدمات</a>
+                    <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">المهارات</a>
+                    <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">المشاريع</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">آراء العملاء</a>
+                    <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">التواصل</a>
                 </div>
                 
-                <button id="langToggle" class="glass-effect px-4 py-2 rounded-lg hover:scale-105 transition-all duration-300">
-                    <i class="fas fa-language ml-2"></i>
-                    <span id="langText">English</span>
-                </button>
+                <!-- Theme and Language Toggle -->
+                <div class="flex items-center space-x-3">
+                    <button id="themeToggle" aria-label="تبديل الوضع الليلي" class="glass-effect p-2 rounded-lg hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                        <i class="fas fa-moon text-indigo-300 hidden dark:inline"></i>
+                    </button>
+                    <button id="langToggle" aria-label="تبديل اللغة" class="glass-effect px-3 py-2 rounded-lg hover:scale-105 transition-all duration-300 text-sm md:text-base">
+                        <i class="fas fa-language ml-1"></i>
+                        <span id="langText">English</span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <!-- Floating Shapes -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
         <div class="floating-shapes">
-            <div class="floating-shape w-72 h-72 top-20 right-10 opacity-30" style="animation-delay: 0s;"></div>
-            <div class="floating-shape w-96 h-96 bottom-20 left-10 opacity-20" style="animation-delay: -2s;"></div>
-            <div class="floating-shape w-48 h-48 top-1/2 right-1/3 opacity-25" style="animation-delay: -4s;"></div>
+            <div class="floating-shape w-64 h-64 top-1/4 right-1/4" style="animation-delay: 0s;"></div>
+            <div class="floating-shape w-80 h-80 bottom-1/3 left-1/4" style="animation-delay: -3s;"></div>
+            <div class="floating-shape w-52 h-52 top-1/2 left-1/2" style="animation-delay: -6s; transform: translate(-50%, -50%);"></div>
         </div>
         
         <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="animate-fade-in">
-                <!-- Profile Section -->
-                <div class="relative w-48 h-48 mx-auto mb-8">
+            <div class="animate-fade-in [animation-delay:0.2s] opacity-0">
+                <!-- Profile Image -->
+                <div class="relative w-44 h-44 md:w-52 md:h-52 mx-auto mb-8 hero-profile-image">
                     <div class="absolute inset-0 gradient-primary rounded-full animate-pulse-slow"></div>
-                    <div class="absolute inset-2 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
-                        <i class="fas fa-user-tie text-6xl text-primary"></i>
+                    <div class="absolute inset-2 bg-white dark:bg-gray-900 rounded-full flex items-center justify-center border-4 border-white dark:border-gray-800 overflow-hidden">
+                        <img src="page_10.jpg" 
+                             alt="م. أبوبكر حسان" 
+                             class="w-full h-full object-cover"
+                             loading="lazy">
                     </div>
-                    <div class="absolute -bottom-4 -right-4 w-16 h-16 gradient-success rounded-full flex items-center justify-center shadow-lg animate-bounce-slow">
-                        <i class="fas fa-check text-white text-xl"></i>
+                    <div class="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 w-14 h-14 md:w-16 md:h-16 gradient-success rounded-full flex items-center justify-center shadow-lg animate-bounce-slow border-2 border-white dark:border-gray-800">
+                        <i class="fas fa-check text-white text-xl md:text-2xl"></i>
                     </div>
                 </div>
                 
-                <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" 
-                          data-ar="مهندس ابوبكرحسان " data-en="Eng. Abobakr Hassan">
-                        مهندس ابوبكر حسان
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 animate-slide-up [animation-delay:0.4s] opacity-0">
+                    <span class="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent" 
+                          data-ar="م. أبوبكر حسان" data-en="Eng. Abobakr Hassan">
+                        م. أبوبكر حسان
                     </span>
                 </h1>
                 
-                <p class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 font-light" 
+                <!-- Subtitle -->
+                <p class="text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 mb-6 font-medium animate-slide-up [animation-delay:0.6s] opacity-0" 
                    data-ar="مهندس برمجيات ومطور حلول تقنية" data-en="Software Engineer & Tech Solutions Developer">
                    مهندس برمجيات ومطور حلول تقنية
                 </p>
                 
-                <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed" 
-                   data-ar="أقدم حلول تقنية مبتكرة ومتطورة في مجال البرمجة والذكاء الاصطناعي مع خبرة واسعة في تطوير المشاريع الأكاديمية والتجارية"
+                <!-- Description -->
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed animate-slide-up [animation-delay:0.8s] opacity-0" 
+                   data-ar="أقدم حلولاً تقنية مبتكرة ومتطورة في مجال البرمجة والذكاء الاصطناعي مع خبرة واسعة في تطوير المشاريع الأكاديمية والتجارية"
                    data-en="I provide innovative and advanced technical solutions in programming and artificial intelligence with extensive experience in developing academic and commercial projects">
-                   أقدم حلول تقنية مبتكرة ومتطورة في مجال البرمجة والذكاء الاصطناعي مع خبرة واسعة في تطوير المشاريع الأكاديمية والتجارية
+                   أقدم حلولاً تقنية مبتكرة ومتطورة في مجال البرمجة والذكاء الاصطناعي مع خبرة واسعة في تطوير المشاريع الأكاديمية والتجارية
                 </p>
                 
                 <!-- Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
-                    <div class="glass-effect p-6 rounded-2xl animate-scale-in">
-                        <div class="text-4xl font-bold text-primary mb-2">100+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400" data-ar="مشروع مكتمل" data-en="Completed Projects">مشروع مكتمل</div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 max-w-5xl mx-auto">
+                    <div class="glass-effect p-4 md:p-5 rounded-2xl animate-scale-in [animation-delay:1s] opacity-0">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">100+</div>
+                        <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400" data-ar="مشروع مكتمل" data-en="Completed Projects">مشروع مكتمل</div>
                     </div>
-                    <div class="glass-effect p-6 rounded-2xl animate-scale-in" style="animation-delay: 0.1s;">
-                        <div class="text-4xl font-bold text-secondary mb-2">5+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</div>
+                    <div class="glass-effect p-4 md:p-5 rounded-2xl animate-scale-in [animation-delay:1.1s] opacity-0">
+                        <div class="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">5+</div>
+                        <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</div>
                     </div>
-                    <div class="glass-effect p-6 rounded-2xl animate-scale-in" style="animation-delay: 0.2s;">
-                        <div class="text-4xl font-bold text-accent mb-2">50+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400" data-ar="عميل راضي" data-en="Happy Clients">عميل راضي</div>
+                    <div class="glass-effect p-4 md:p-5 rounded-2xl animate-scale-in [animation-delay:1.2s] opacity-0">
+                        <div class="text-3xl md:text-4xl font-bold text-accent-600 mb-2">50+</div>
+                        <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400" data-ar="عميل راضي" data-en="Happy Clients">عميل راضي</div>
                     </div>
-                    <div class="glass-effect p-6 rounded-2xl animate-scale-in" style="animation-delay: 0.3s;">
-                        <div class="text-4xl font-bold text-success mb-2">24/7</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400" data-ar="دعم فني" data-en="Support">دعم فني</div>
+                    <div class="glass-effect p-4 md:p-5 rounded-2xl animate-scale-in [animation-delay:1.3s] opacity-0">
+                        <div class="text-3xl md:text-4xl font-bold text-success-500 mb-2">24/7</div>
+                        <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400" data-ar="دعم فني" data-en="Support">دعم فني</div>
                     </div>
                 </div>
                 
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#services" class="gradient-primary text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-300 flex items-center justify-center">
-                        <i class="fas fa-rocket ml-2"></i>
-                        <span data-ar="استكشف خدماتي" data-en="Explore Services">استكشف خدماتي</span>
+                <!-- Call to Action -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up [animation-delay:1.4s] opacity-0">
+                    <a href="#contact" class="gradient-primary text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300 flex items-center justify-center text-base md:text-lg">
+                        <i class="fas fa-paper-plane ml-2"></i>
+                        <span data-ar="تواصل معي" data-en="Contact Me">تواصل معي</span>
                     </a>
-                    <a href="#projects" class="glass-effect px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center">
-                        <i class="fas fa-portfolio ml-2"></i>
-                        <span data-ar="شاهد أعمالي" data-en="View Portfolio">شاهد أعمالي</span>
+                    <a href="#projects" class="glass-effect px-6 py-3 md:px-8 md:py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center text-gray-800 dark:text-white text-base md:text-lg">
+                        <i class="fas fa-briefcase ml-2"></i>
+                        <span data-ar="معرض الأعمال" data-en="View Portfolio">معرض الأعمال</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <a href="#about" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow opacity-0 animate-fade-in [animation-delay:1.6s]">
+            <div class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center">
+                <i class="fas fa-chevron-down text-primary-600"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="w-full h-80 md:h-96 bg-gray-200 dark:bg-gray-700 rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&auto=format&q=80" 
+                                 alt="About Me" 
+                                 class="w-full h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 gradient-primary rounded-2xl flex items-center justify-center shadow-xl animate-float">
+                            <i class="fas fa-lightbulb text-white text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 section-title" 
+                        data-ar="عني" data-en="About Me">عني</h2>
+                    
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed" 
+                       data-ar="أنا مهندس برمجيات متخصص مع أكثر من 5 سنوات من الخبرة في تطوير الحلول التقنية المبتكرة. تخرجت بدرجة امتياز في هندسة البرمجيات وأعمل منذ ذلك الحين على مساعدة الطلاب والمؤسسات في تحقيق أهدافهم التقنية."
+                       data-en="I am a specialized software engineer with over 5 years of experience in developing innovative technical solutions. I graduated with honors in Software Engineering and have since been helping students and organizations achieve their technical goals.">
+                       أنا مهندس برمجيات متخصص مع أكثر من 5 سنوات من الخبرة في تطوير الحلول التقنية المبتكرة. تخرجت بدرجة امتياز في هندسة البرمجيات وأعمل منذ ذلك الحين على مساعدة الطلاب والمؤسسات في تحقيق أهدافهم التقنية.
+                    </p>
+                    
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed" 
+                       data-ar="أمتلك شغفًا كبيرًا للتعلم المستمر ومواكبة أحدث التقنيات في مجال البرمجة والذكاء الاصطناعي. أسعى دائمًا لتقديم أعلى معايير الجودة في كل مشروع أعمل عليه، مع التركيز على تلبية احتياجات العملاء وتحقيق توقعاتهم."
+                       data-en="I have a great passion for continuous learning and keeping up with the latest technologies in programming and artificial intelligence. I always strive to provide the highest quality standards in every project I work on, focusing on meeting customer needs and exceeding their expectations.">
+                       أمتلك شغفًا كبيرًا للتعلم المستمر ومواكبة أحدث التقنيات في مجال البرمجة والذكاء الاصطناعي. أسعى دائمًا لتقديم أعلى معايير الجودة في كل مشروع أعمل عليه، مع التركيز على تلبية احتياجات العملاء وتحقيق توقعاتهم.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center mr-3">
+                                <i class="fas fa-calendar-check text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 dark:text-white" data-ar="الخبرة" data-en="Experience">الخبرة</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-400" data-ar="5+ سنوات" data-en="5+ Years">5+ سنوات</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center mr-3">
+                                <i class="fas fa-graduation-cap text-primary-600 dark:text-primary-400"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 dark:text-white" data-ar="التعليم" data-en="Education">التعليم</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-400" data-ar="هندسة برمجيات" data-en="Software Engineering">هندسة برمجيات</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-medium transition-colors duration-300">
+                        <span data-ar="تواصل معي" data-en="Contact Me">تواصل معي</span>
+                        <i class="fas fa-arrow-left ml-2"></i>
                     </a>
                 </div>
             </div>
@@ -325,131 +606,294 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 relative">
+    <section id="services" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900/50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 section-title" 
-                    data-ar="خدماتي المتخصصة" data-en="My Specialized Services">
-                    خدماتي المتخصصة
-                </h2>
-                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 section-title" 
+                    data-ar="خدماتي" data-en="My Services">خدماتي</h2>
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
                    data-ar="مجموعة شاملة من الخدمات التقنية المتقدمة لتلبية جميع احتياجاتك الأكاديمية والمهنية"
                    data-en="A comprehensive range of advanced technical services to meet all your academic and professional needs">
                    مجموعة شاملة من الخدمات التقنية المتقدمة لتلبية جميع احتياجاتك الأكاديمية والمهنية
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Service 1 -->
-                <div class="card-modern rounded-3xl p-8 group">
-                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                <div class="card-modern rounded-2xl p-6 md:p-8 group opacity-0 animate-slide-up [animation-delay:0.2s]">
+                    <div class="w-14 h-14 md:w-16 md:h-16 gradient-primary rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-graduation-cap text-xl md:text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white" 
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800 dark:text-white" 
                         data-ar="مشاريع التخرج" data-en="Graduation Projects">مشاريع التخرج</h3>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" 
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed" 
                        data-ar="تطوير مشاريع تخرج متكاملة ومبتكرة باستخدام أحدث التقنيات مع ضمان الحصول على أعلى الدرجات"
                        data-en="Develop comprehensive and innovative graduation projects using latest technologies with guaranteed highest grades">
                        تطوير مشاريع تخرج متكاملة ومبتكرة باستخدام أحدث التقنيات مع ضمان الحصول على أعلى الدرجات
                     </p>
-                    <div class="flex items-center mt-6 text-primary font-semibold">
+                    <a href="#contact" class="inline-flex items-center mt-5 text-primary-600 hover:text-primary-700 font-medium text-sm md:text-base transition-colors">
                         <span data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</span>
                         <i class="fas fa-arrow-left mr-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="card-modern rounded-3xl p-8 group">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                         style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-                        <i class="fas fa-robot text-2xl text-white"></i>
+                <div class="card-modern rounded-2xl p-6 md:p-8 group opacity-0 animate-slide-up [animation-delay:0.3s]">
+                    <div class="w-14 h-14 md:w-16 md:h-16 gradient-secondary rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-robot text-xl md:text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white" 
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800 dark:text-white" 
                         data-ar="الذكاء الاصطناعي" data-en="Artificial Intelligence">الذكاء الاصطناعي</h3>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" 
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed" 
                        data-ar="تطوير حلول ذكية باستخدام خوارزميات التعلم الآلي والذكاء الاصطناعي لحل المشاكل المعقدة"
                        data-en="Develop smart solutions using machine learning and AI algorithms to solve complex problems">
                        تطوير حلول ذكية باستخدام خوارزميات التعلم الآلي والذكاء الاصطناعي لحل المشاكل المعقدة
                     </p>
-                    <div class="flex items-center mt-6 text-pink-500 font-semibold">
+                    <a href="#contact" class="inline-flex items-center mt-5 text-secondary-600 hover:text-secondary-700 font-medium text-sm md:text-base transition-colors">
                         <span data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</span>
                         <i class="fas fa-arrow-left mr-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="card-modern rounded-3xl p-8 group">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                         style="background: linear-gradient(135deg, #4ade80, #22c55e);">
-                        <i class="fas fa-globe text-2xl text-white"></i>
+                <div class="card-modern rounded-2xl p-6 md:p-8 group opacity-0 animate-slide-up [animation-delay:0.4s]">
+                    <div class="w-14 h-14 md:w-16 md:h-16 gradient-success rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-globe text-xl md:text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white" 
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800 dark:text-white" 
                         data-ar="تطوير المواقع" data-en="Web Development">تطوير المواقع</h3>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" 
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed" 
                        data-ar="تصميم وتطوير مواقع ويب احترافية ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات"
                        data-en="Design and develop professional responsive websites compatible with all devices using latest technologies">
                        تصميم وتطوير مواقع ويب احترافية ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات
                     </p>
-                    <div class="flex items-center mt-6 text-green-500 font-semibold">
+                    <a href="#contact" class="inline-flex items-center mt-5 text-success-600 hover:text-success-700 font-medium text-sm md:text-base transition-colors">
                         <span data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</span>
                         <i class="fas fa-arrow-left mr-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="card-modern rounded-3xl p-8 group">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                         style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
-                        <i class="fab fa-matlab text-2xl text-white"></i>
+                <div class="card-modern rounded-2xl p-6 md:p-8 group opacity-0 animate-slide-up [animation-delay:0.5s]">
+                    <div class="w-14 h-14 md:w-16 md:h-16 gradient-accent rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-matlab text-xl md:text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white" 
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800 dark:text-white" 
                         data-ar="برمجة MATLAB" data-en="MATLAB Programming">برمجة MATLAB</h3>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" 
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed" 
                        data-ar="تطوير حلول متقدمة للحوسبة العلمية والتحليل الرقمي باستخدام MATLAB وSimulink"
                        data-en="Develop advanced solutions for scientific computing and numerical analysis using MATLAB and Simulink">
                        تطوير حلول متقدمة للحوسبة العلمية والتحليل الرقمي باستخدام MATLAB وSimulink
                     </p>
-                    <div class="flex items-center mt-6 text-yellow-500 font-semibold">
+                    <a href="#contact" class="inline-flex items-center mt-5 text-accent-600 hover:text-accent-700 font-medium text-sm md:text-base transition-colors">
                         <span data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</span>
                         <i class="fas fa-arrow-left mr-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="card-modern rounded-3xl p-8 group">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                         style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
-                        <i class="fas fa-file-alt text-2xl text-white"></i>
+                <div class="card-modern rounded-2xl p-6 md:p-8 group opacity-0 animate-slide-up [animation-delay:0.6s]">
+                    <div class="w-14 h-14 md:w-16 md:h-16 gradient-primary rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-file-alt text-xl md:text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white" 
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800 dark:text-white" 
                         data-ar="التقارير والدراسات" data-en="Reports & Studies">التقارير والدراسات</h3>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" 
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed" 
                        data-ar="إعداد تقارير فنية شاملة ودراسات جدوى مفصلة مع تحليل البيانات والإحصائيات"
                        data-en="Prepare comprehensive technical reports and detailed feasibility studies with data analysis and statistics">
                        إعداد تقارير فنية شاملة ودراسات جدوى مفصلة مع تحليل البيانات والإحصائيات
                     </p>
-                    <div class="flex items-center mt-6 text-purple-500 font-semibold">
+                    <a href="#contact" class="inline-flex items-center mt-5 text-primary-600 hover:text-primary-700 font-medium text-sm md:text-base transition-colors">
                         <span data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</span>
                         <i class="fas fa-arrow-left mr-2 group-hover:translate-x-2 transition-transform"></i>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="card-modern rounded-3xl p-8 group">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                         style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
-                        <i class="fas fa-user-graduate text-2xl text-white"></i>
+                <div class="card-modern rounded-2xl p-6 md:p-8 group opacity-0 animate-slide-up [animation-delay:0.7s]">
+                    <div class="w-14 h-14 md:w-16 md:h-16 gradient-secondary rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-desktop text-xl md:text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white" 
-                        data-ar="الدعم الأكاديمي" data-en="Academic Support">الدعم الأكاديمي</h3>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" 
-                       data-ar="مساعدة شاملة في الواجبات والبحوث الجامعية مع شرح المفاهيم وإعداد الملخصات"
-                       data-en="Comprehensive assistance with assignments and university research with concept explanations and summary preparation">
-                       مساعدة شاملة في الواجبات والبحوث الجامعية مع شرح المفاهيم وإعداد الملخصات
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        data-ar="تحميل الأنظمة والبرامج" data-en="System & Software Installation">
+                        تحميل الأنظمة والبرامج
+                    </h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed" 
+                       data-ar="تحميل وتثبيت أنظمة التشغيل المختلفة (ويندوز، لينكس، ماك)، الأنظمة الوهمية، وأحدث برامج الحاسب مع حل جميع المشاكل البرمجية وتصميم شاشات احترافية متوافقة ومتميزة"
+                       data-en="Download and install various operating systems (Windows, Linux, Mac), virtual machines, and latest computer software. Also, fix all software issues and design professional, elegant interfaces.">
+                       تحميل وتثبيت أنظمة التشغيل المختلفة (ويندوز، لينكس، ماك)، الأنظمة الوهمية، وأحدث برامج الحاسب مع حل جميع المشاكل البرمجية وتصميم شاشات احترافية متوافقة ومتميزة
                     </p>
-                    <div class="flex items-center mt-6 text-cyan-500 font-semibold">
+                    <a href="#contact" class="inline-flex items-center mt-5 text-secondary-600 hover:text-secondary-700 font-medium text-sm md:text-base transition-colors">
                         <span data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</span>
                         <i class="fas fa-arrow-left mr-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 section-title" 
+                    data-ar="مهاراتي التقنية" data-en="My Technical Skills">مهاراتي التقنية</h2>
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="مجموعة من المهارات والخبرات التي اكتسبتها خلال سنوات عملي في مجال البرمجة والتطوير"
+                   data-en="A set of skills and expertise I've acquired over years of working in programming and development">
+                   مجموعة من المهارات والخبرات التي اكتسبتها خلال سنوات عملي في مجال البرمجة والتطوير
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <!-- Technical Skills -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                            <i class="fas fa-code mr-2 text-primary-600"></i>
+                            <span data-ar="المهارات التقنية" data-en="Technical Skills">المهارات التقنية</span>
+                        </h3>
+                        
+                        <div class="space-y-5">
+                            <!-- Skill 1 -->
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-700 dark:text-gray-300 font-medium" data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</span>
+                                    <span class="text-primary-600 font-bold">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Skill 2 -->
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-700 dark:text-gray-300 font-medium" data-ar="الذكاء الاصطناعي" data-en="Artificial Intelligence">الذكاء الاصطناعي</span>
+                                    <span class="text-primary-600 font-bold">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Skill 3 -->
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-700 dark:text-gray-300 font-medium" data-ar="قواعد البيانات" data-en="Databases">قواعد البيانات</span>
+                                    <span class="text-primary-600 font-bold">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Skill 4 -->
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-700 dark:text-gray-300 font-medium" data-ar="تطوير التطبيقات" data-en="App Development">تطوير التطبيقات</span>
+                                    <span class="text-primary-600 font-bold">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Programming Languages -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                            <i class="fas fa-laptop-code mr-2 text-primary-600"></i>
+                            <span data-ar="لغات البرمجة" data-en="Programming Languages">لغات البرمجة</span>
+                        </h3>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-lg text-sm font-medium">Python</span>
+                            <span class="px-3 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-lg text-sm font-medium">JavaScript</span>
+                            <span class="px-3 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-lg text-sm font-medium">Java</span>
+                            <span class="px-3 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-lg text-sm font-medium">C#</span>
+                            <span class="px-3 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-lg text-sm font-medium">PHP</span>
+                            <span class="px-3 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-lg text-sm font-medium">MATLAB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Tools & Technologies -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                            <i class="fas fa-tools mr-2 text-primary-600"></i>
+                            <span data-ar="الأدوات والتقنيات" data-en="Tools & Technologies">الأدوات والتقنيات</span>
+                        </h3>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fab fa-react text-blue-500"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">React</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fab fa-vuejs text-green-500"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Vue.js</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fab fa-node-js text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Node.js</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fas fa-database text-blue-600"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">MySQL</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fas fa-fire text-orange-500"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Firebase</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fab fa-git-alt text-orange-600"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Git</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fas fa-brain text-purple-500"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">TensorFlow</span>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                                <div class="w-8 h-8 bg-white dark:bg-gray-700 rounded-md flex items-center justify-center mr-3">
+                                    <i class="fab fa-docker text-blue-400"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Soft Skills -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                            <i class="fas fa-users mr-2 text-primary-600"></i>
+                            <span data-ar="المهارات الشخصية" data-en="Soft Skills">المهارات الشخصية</span>
+                        </h3>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-sm font-medium" data-ar="العمل الجماعي" data-en="Teamwork">العمل الجماعي</span>
+                            <span class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-sm font-medium" data-ar="التواصل" data-en="Communication">التواصل</span>
+                            <span class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-sm font-medium" data-ar="إدارة الوقت" data-en="Time Management">إدارة الوقت</span>
+                            <span class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-sm font-medium" data-ar="حل المشكلات" data-en="Problem Solving">حل المشكلات</span>
+                            <span class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-sm font-medium" data-ar="الإبداع" data-en="Creativity">الإبداع</span>
+                            <span class="px-3 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-sm font-medium" data-ar="القيادة" data-en="Leadership">القيادة</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -457,52 +901,65 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900/50">
+    <section id="projects" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900/50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 section-title" 
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 section-title" 
                     data-ar="معرض المشاريع" data-en="Projects Gallery">معرض المشاريع</h2>
-                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
                    data-ar="نماذج من أبرز المشاريع التقنية التي تم تطويرها بأحدث التقنيات وأعلى معايير الجودة"
                    data-en="Samples of top technical projects developed with latest technologies and highest quality standards">
                    نماذج من أبرز المشاريع التقنية التي تم تطويرها بأحدث التقنيات وأعلى معايير الجودة
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Projects Filter -->
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-lg p-1 bg-gray-100 dark:bg-gray-800">
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-md bg-white dark:bg-gray-700 text-primary-600 dark:text-primary-400 shadow-sm" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700" data-filter="web" data-ar="الويب" data-en="Web">الويب</button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700" data-filter="ai" data-ar="الذكاء الاصطناعي" data-en="AI">الذكاء الاصطناعي</button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700" data-filter="mobile" data-ar="التطبيقات" data-en="Mobile">التطبيقات</button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Project 1 -->
-                <div class="project-card card-modern rounded-3xl overflow-hidden">
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.2s]" data-category="web">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=250&fit=crop" 
-                             alt="Library System" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=380&fit=crop&auto=format&q=80" 
+                             alt="Library System" 
+                             class="w-full h-48 md:h-56 object-cover transition-transform duration-300 hover:scale-110"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <a href="#" aria-label="View Project Details" class="p-4 text-white hover:text-primary-400 transition-colors">
                                 <i class="fas fa-external-link-alt text-lg"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
-                                <i class="fas fa-book text-white"></i>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-book text-white text-base md:text-lg"></i>
                             </div>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium">إدارة</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-medium">إدارة</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
                             data-ar="نظام إدارة المكتبة الإلكتروني" data-en="Electronic Library Management System">
                             نظام إدارة المكتبة الإلكتروني
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4" 
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
                            data-ar="نظام شامل لإدارة المكتبات الرقمية مع فهرسة الكتب ونظام الإعارة المتقدم"
                            data-en="Comprehensive digital library management system with book cataloging and advanced lending system">
                            نظام شامل لإدارة المكتبات الرقمية مع فهرسة الكتب ونظام الإعارة المتقدم
                         </p>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <div class="flex space-x-2">
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">PHP</span>
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">MySQL</span>
                             </div>
-                            <button class="text-primary hover:text-secondary transition-colors font-medium">
+                            <button aria-label="View details for Library System" class="text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
                                 <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
                                 <i class="fas fa-arrow-left mr-1"></i>
                             </button>
@@ -511,39 +968,40 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card card-modern rounded-3xl overflow-hidden">
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.3s]" data-category="ai">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=250&fit=crop" 
-                             alt="AI Brain Analysis" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=380&fit=crop&auto=format&q=80" 
+                             alt="AI Brain Analysis" 
+                             class="w-full h-48 md:h-56 object-cover transition-transform duration-300 hover:scale-110"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <a href="#" aria-label="View Project Details" class="p-4 text-white hover:text-primary-400 transition-colors">
                                 <i class="fas fa-external-link-alt text-lg"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-xl flex items-center justify-center ml-3"
-                                 style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-                                <i class="fas fa-brain text-white"></i>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-brain text-white text-base md:text-lg"></i>
                             </div>
-                            <span class="bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-300 px-3 py-1 rounded-full text-sm font-medium">AI</span>
+                            <span class="bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-300 px-3 py-1 rounded-full text-xs font-medium">AI</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
                             data-ar="نظام تشخيص أورام الدماغ بالذكاء الاصطناعي" data-en="AI Brain Tumor Diagnosis System">
                             نظام تشخيص أورام الدماغ بالذكاء الاصطناعي
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4" 
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
                            data-ar="مشروع تخرج متطور لتشخيص وتصنيف أورام الدماغ باستخدام خوارزميات التعلم العميق"
                            data-en="Advanced graduation project for brain tumor diagnosis and classification using deep learning algorithms">
                            مشروع تخرج متطور لتشخيص وتصنيف أورام الدماغ باستخدام خوارزميات التعلم العميق
                         </p>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <div class="flex space-x-2">
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Python</span>
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">TensorFlow</span>
                             </div>
-                            <button class="text-primary hover:text-secondary transition-colors font-medium">
+                            <button aria-label="View details for AI Brain Tumor Diagnosis System" class="text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
                                 <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
                                 <i class="fas fa-arrow-left mr-1"></i>
                             </button>
@@ -552,39 +1010,40 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card card-modern rounded-3xl overflow-hidden">
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.4s]" data-category="mobile">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" 
-                             alt="Chat Application" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=380&fit=crop&auto=format&q=80" 
+                             alt="Chat Application" 
+                             class="w-full h-48 md:h-56 object-cover transition-transform duration-300 hover:scale-110"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <a href="#" aria-label="View Project Details" class="p-4 text-white hover:text-primary-400 transition-colors">
                                 <i class="fas fa-external-link-alt text-lg"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-xl flex items-center justify-center ml-3"
-                                 style="background: linear-gradient(135deg, #4ade80, #22c55e);">
-                                <i class="fab fa-java text-white"></i>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-success rounded-xl flex items-center justify-center ml-3">
+                                <i class="fab fa-java text-white text-base md:text-lg"></i>
                             </div>
-                            <span class="bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 px-3 py-1 rounded-full text-sm font-medium">تطبيق</span>
+                            <span class="bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 px-3 py-1 rounded-full text-xs font-medium">تطبيق</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
                             data-ar="نظام شات متقدم بلغة جافا" data-en="Advanced Java Chat System">
                             نظام شات متقدم بلغة جافا
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4" 
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
                            data-ar="تطبيق تراسل فوري يدعم النصوص والملفات المتعددة مع تشفير متقدم للرسائل"
                            data-en="Instant messaging app supporting text and multimedia files with advanced message encryption">
                            تطبيق تراسل فوري يدعم النصوص والملفات المتعددة مع تشفير متقدم للرسائل
                         </p>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <div class="flex space-x-2">
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Java</span>
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Socket</span>
                             </div>
-                            <button class="text-primary hover:text-secondary transition-colors font-medium">
+                            <button aria-label="View details for Advanced Java Chat System" class="text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
                                 <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
                                 <i class="fas fa-arrow-left mr-1"></i>
                             </button>
@@ -593,39 +1052,40 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card card-modern rounded-3xl overflow-hidden">
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.5s]" data-category="web">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop" 
-                             alt="School Management" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=380&fit=crop&auto=format&q=80" 
+                             alt="School Management" 
+                             class="w-full h-48 md:h-56 object-cover transition-transform duration-300 hover:scale-110"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <a href="#" aria-label="View Project Details" class="p-4 text-white hover:text-primary-400 transition-colors">
                                 <i class="fas fa-external-link-alt text-lg"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-xl flex items-center justify-center ml-3"
-                                 style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
-                                <i class="fas fa-school text-white"></i>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-accent rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-school text-white text-base md:text-lg"></i>
                             </div>
-                            <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300 px-3 py-1 rounded-full text-sm font-medium">تعليم</span>
+                            <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300 px-3 py-1 rounded-full text-xs font-medium">تعليم</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
                             data-ar="نظام إدارة الطلاب للمدارس" data-en="School Student Management System">
                             نظام إدارة الطلاب للمدارس
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4" 
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
                            data-ar="منصة متكاملة لإدارة معلومات الطلاب والدرجات مع نظام تقارير تفصيلية"
                            data-en="Integrated platform for managing student information and grades with detailed reporting system">
                            منصة متكاملة لإدارة معلومات الطلاب والدرجات مع نظام تقارير تفصيلية
                         </p>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <div class="flex space-x-2">
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">C#</span>
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">.NET</span>
                             </div>
-                            <button class="text-primary hover:text-secondary transition-colors font-medium">
+                            <button aria-label="View details for School Student Management System" class="text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
                                 <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
                                 <i class="fas fa-arrow-left mr-1"></i>
                             </button>
@@ -634,39 +1094,40 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card card-modern rounded-3xl overflow-hidden">
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.6s]" data-category="ai">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop" 
-                             alt="Eye Biometric" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=380&fit=crop&auto=format&q=80" 
+                             alt="Eye Biometric" 
+                             class="w-full h-48 md:h-56 object-cover transition-transform duration-300 hover:scale-110"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <a href="#" aria-label="View Project Details" class="p-4 text-white hover:text-primary-400 transition-colors">
                                 <i class="fas fa-external-link-alt text-lg"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-xl flex items-center justify-center ml-3"
-                                 style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
-                                <i class="fas fa-eye text-white"></i>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-eye text-white text-base md:text-lg"></i>
                             </div>
-                            <span class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-sm font-medium">أمان</span>
+                            <span class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium">أمان</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
                             data-ar="نظام بصمة العين المتقدم" data-en="Advanced Eye Biometric System">
                             نظام بصمة العين المتقدم
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4" 
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
                            data-ar="نظام أمان متطور للمصادقة باستخدام بصمة العين مع دقة عالية في التحقق"
                            data-en="Advanced security system for eye biometric authentication with high verification accuracy">
                            نظام أمان متطور للمصادقة باستخدام بصمة العين مع دقة عالية في التحقق
                         </p>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <div class="flex space-x-2">
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">OpenCV</span>
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Python</span>
                             </div>
-                            <button class="text-primary hover:text-secondary transition-colors font-medium">
+                            <button aria-label="View details for Advanced Eye Biometric System" class="text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
                                 <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
                                 <i class="fas fa-arrow-left mr-1"></i>
                             </button>
@@ -675,39 +1136,40 @@
                 </div>
 
                 <!-- Project 6 -->
-                <div class="project-card card-modern rounded-3xl overflow-hidden">
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.7s]" data-category="web">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop" 
-                             alt="Medical Records" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=380&fit=crop&auto=format&q=80" 
+                             alt="Medical Records" 
+                             class="w-full h-48 md:h-56 object-cover transition-transform duration-300 hover:scale-110"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <a href="#" aria-label="View Project Details" class="p-4 text-white hover:text-primary-400 transition-colors">
                                 <i class="fas fa-external-link-alt text-lg"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-xl flex items-center justify-center ml-3"
-                                 style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
-                                <i class="fas fa-file-medical text-white"></i>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-file-medical text-white text-base md:text-lg"></i>
                             </div>
-                            <span class="bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-300 px-3 py-1 rounded-full text-sm font-medium">طبي</span>
+                            <span class="bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-300 px-3 py-1 rounded-full text-xs font-medium">طبي</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white" 
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
                             data-ar="نظام إدارة السجلات الطبية" data-en="Medical Records Management System">
                             نظام إدارة السجلات الطبية
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4" 
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
                            data-ar="منصة إلكترونية شاملة لإدارة السجلات الصحية مع نظام مواعيد متقدم"
                            data-en="Comprehensive electronic platform for health records management with advanced appointment system">
                            منصة إلكترونية شاملة لإدارة السجلات الصحية مع نظام مواعيد متقدم
                         </p>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <div class="flex space-x-2">
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Laravel</span>
                                 <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Vue.js</span>
                             </div>
-                            <button class="text-primary hover:text-secondary transition-colors font-medium">
+                            <button aria-label="View details for Medical Records Management System" class="text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
                                 <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
                                 <i class="fas fa-arrow-left mr-1"></i>
                             </button>
@@ -715,65 +1177,130 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- View More Button -->
+            <div class="text-center mt-12 opacity-0 animate-slide-up [animation-delay:0.8s]">
+                <button class="px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl font-medium text-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300">
+                    <span data-ar="عرض المزيد" data-en="View More">عرض المزيد</span>
+                    <i class="fas fa-arrow-left ml-2"></i>
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- Values Section -->
-    <section class="py-20 gradient-primary">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6" 
-                    data-ar="قيمي في العمل" data-en="My Work Values">قيمي في العمل</h2>
-                <p class="text-lg text-white/90 max-w-3xl mx-auto" 
-                   data-ar="المبادئ والقيم التي أؤمن بها وألتزم بها في كل مشروع أعمل عليه"
-                   data-en="The principles and values I believe in and commit to in every project I work on">
-                   المبادئ والقيم التي أؤمن بها وألتزم بها في كل مشروع أعمل عليه
+    <!-- Testimonials Section -->
+<!-- تقييمات جوجل -->
+<section class="py-16 md:py-24 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 section-title" 
+                data-ar="تقييمات عملائنا على جوجل" 
+                data-en="Google Reviews">
+                تقييمات عملائنا على جوجل
+            </h2>
+            <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+               data-ar="آراء حقيقية من عملاء مركز ركن العطاء للخدمات الطلابية في تعز"
+               data-en="Real feedback from clients of Rukn Al-Ataa Student Services Center in Taiz">
+               آراء حقيقية من عملاء مركز ركن العطاء للخدمات الطلابية في تعز
+            </p>
+        </div>
+        
+        <!-- Google Reviews Embed -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="card-modern rounded-2xl p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                        <i class="fas fa-user text-gray-500"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-800 dark:text-white">أحمد علي</h4>
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400 italic">
+                    "مركز ممتاز ساعدوني في إنجاز مشروع التخرج باحترافية، أنصح جميع الطلاب بالتعامل معهم"
                 </p>
+                <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    <i class="fab fa-google mr-2"></i> Google Review
+                </div>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center group">
-                    <div class="w-24 h-24 glass-effect rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-trophy text-4xl text-white"></i>
+            <!-- Review 2 -->
+            <div class="card-modern rounded-2xl p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                        <i class="fas fa-user text-gray-500"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-ar="إتقان العمل" data-en="Excellence">إتقان العمل</h3>
-                    <p class="text-white/80" data-ar="الجودة والدقة في كل تفصيل" data-en="Quality and precision in every detail">الجودة والدقة في كل تفصيل</p>
+                    <div>
+                        <h4 class="font-bold text-gray-800 dark:text-white">سارة محمد</h4>
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star-half-alt text-yellow-400"></i>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="text-center group">
-                    <div class="w-24 h-24 glass-effect rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-handshake text-4xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-ar="المصداقية" data-en="Credibility">المصداقية</h3>
-                    <p class="text-white/80" data-ar="الثقة والشفافية في التعامل" data-en="Trust and transparency in dealings">الثقة والشفافية في التعامل</p>
+                <p class="text-gray-600 dark:text-gray-400 italic">
+                    "خدمات مميزة ودعم فني رائع، ساعدوني في حل مشكلة معقدة في مشروع الذكاء الاصطناعي الخاص بي"
+                </p>
+                <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    <i class="fab fa-google mr-2"></i> Google Review
                 </div>
-                
-                <div class="text-center group">
-                    <div class="w-24 h-24 glass-effect rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-clock text-4xl text-white"></i>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="card-modern rounded-2xl p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                        <i class="fas fa-user text-gray-500"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-ar="الالتزام بالوقت" data-en="Timely Delivery">الالتزام بالوقت</h3>
-                    <p class="text-white/80" data-ar="تسليم المشاريع في الموعد المحدد" data-en="Delivering projects on schedule">تسليم المشاريع في الموعد المحدد</p>
+                    <div>
+                        <h4 class="font-bold text-gray-800 dark:text-white">خالد عبدالله</h4>
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="text-center group">
-                    <div class="w-24 h-24 glass-effect rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-dollar-sign text-4xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3" data-ar="أسعار منافسة" data-en="Competitive Pricing">أسعار منافسة</h3>
-                    <p class="text-white/80" data-ar="أفضل قيمة مقابل المال" data-en="Best value for money">أفضل قيمة مقابل المال</p>
+                <p class="text-gray-600 dark:text-gray-400 italic">
+                    "أفضل مركز خدمات طلابية في تعز، يعملون بجدية واحترافية، والتزامهم بالمواعيد ممتاز"
+                </p>
+                <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    <i class="fab fa-google mr-2"></i> Google Review
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- زر عرض جميع التقييمات -->
+        <div class="text-center mt-12">
+            <a href="YOUR_GOOGLE_REVIEWS_LINK" target="_blank" 
+               class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-colors duration-300">
+                <i class="fab fa-google mr-2"></i>
+                <span data-ar="عرض جميع التقييمات على جوجل" data-en="View All Google Reviews">عرض جميع التقييمات على جوجل</span>
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20">
+    <section id="contact" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 section-title" 
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 section-title" 
                     data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
-                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
                    data-ar="جاهز لبدء مشروعك القادم؟ تواصل معي الآن ودعنا نحول أفكارك إلى واقع"
                    data-en="Ready to start your next project? Contact me now and let's turn your ideas into reality">
                    جاهز لبدء مشروعك القادم؟ تواصل معي الآن ودعنا نحول أفكارك إلى واقع
@@ -781,48 +1308,97 @@
             </div>
             
             <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-12">
+                    <!-- WhatsApp -->
                     <a href="https://wa.me/+967735962962" target="_blank" 
-                       class="group card-modern p-8 rounded-3xl text-center border-2 border-transparent hover:border-green-500">
-                        <div class="w-20 h-20 gradient-success rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fab fa-whatsapp text-3xl text-white"></i>
+                       class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-green-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.2s]">
+                        <div class="w-16 h-16 md:w-20 md:h-20 gradient-success rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-whatsapp text-2xl md:text-3xl text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-800 dark:text-white">WhatsApp</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-3" data-ar="تواصل فوري ومباشر" data-en="Instant and direct communication">تواصل فوري ومباشر</p>
-                        <p class="text-green-600 font-semibold">+967735962962</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">WhatsApp</h3>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="تواصل فوري ومباشر" data-en="Instant and direct communication">تواصل فوري ومباشر</p>
+                        <p class="text-green-600 font-semibold text-base md:text-lg">+967735962962</p>
                     </a>
                     
+                    <!-- Telegram -->
                     <a href="https://t.me/EngAbobakrH" target="_blank" 
-                       class="group card-modern p-8 rounded-3xl text-center border-2 border-transparent hover:border-blue-500">
-                        <div class="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fab fa-telegram text-3xl text-white"></i>
+                       class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-blue-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.3s]">
+                        <div class="w-16 h-16 md:w-20 md:h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-telegram text-2xl md:text-3xl text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-800 dark:text-white">Telegram</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-3" data-ar="مراسلة آمنة ومشاركة ملفات" data-en="Secure messaging and file sharing">مراسلة آمنة ومشاركة ملفات</p>
-                        <p class="text-blue-600 font-semibold">@EngAbobakrH</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">Telegram</h3>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="مراسلة آمنة ومشاركة ملفات" data-en="Secure messaging and file sharing">مراسلة آمنة ومشاركة ملفات</p>
+                        <p class="text-blue-600 font-semibold text-base md:text-lg">@EngAbobakrH</p>
                     </a>
                     
+                    <!-- Email -->
                     <a href="mailto:engabobakrh@gmail.com" 
-                       class="group card-modern p-8 rounded-3xl text-center border-2 border-transparent hover:border-red-500">
-                        <div class="w-20 h-20 gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-envelope text-3xl text-white"></i>
+                       class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-red-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.4s]">
+                        <div class="w-16 h-16 md:w-20 md:h-20 gradient-secondary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-envelope text-2xl md:text-3xl text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-800 dark:text-white" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-3" data-ar="للاستفسارات التفصيلية" data-en="For detailed inquiries">للاستفسارات التفصيلية</p>
-                        <p class="text-red-600 font-semibold">engabobakrh@gmail.com</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="للاستفسارات التفصيلية" data-en="For detailed inquiries">للاستفسارات التفصيلية</p>
+                        <p class="text-red-600 font-semibold text-base md:text-lg">engabobakrh@gmail.com</p>
                     </a>
                 </div>
                 
-                <div class="text-center">
-                    <div class="glass-effect p-8 rounded-3xl">
+                <!-- Contact Form -->
+                <div class="card-modern rounded-2xl p-6 md:p-8 opacity-0 animate-slide-up [animation-delay:0.5s]">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center" 
+                        data-ar="أرسل لي رسالة" data-en="Send Me a Message">أرسل لي رسالة</h3>
+                    
+                    <form id="contactForm" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                                       placeholder="أدخل اسمك الكامل">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                                       placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="الموضوع" data-en="Subject">الموضوع</label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                                   placeholder="أدخل موضوع الرسالة">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                                      placeholder="أدخل رسالتك هنا..."></textarea>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button type="submit" 
+                                    class="w-full gradient-primary text-white px-6 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center text-base md:text-lg">
+                                <i class="fas fa-paper-plane ml-2"></i>
+                                <span data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Availability -->
+                <div class="text-center mt-10 opacity-0 animate-slide-up [animation-delay:0.6s]">
+                    <div class="glass-effect p-6 md:p-8 rounded-2xl">
                         <div class="flex items-center justify-center mb-4">
                             <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse ml-3"></div>
-                            <span class="text-xl font-bold text-gray-800 dark:text-white" 
+                            <span class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
                                   data-ar="متاح للعمل على مشاريع جديدة" data-en="Available for New Projects">
                                   متاح للعمل على مشاريع جديدة
                             </span>
                         </div>
-                        <p class="text-gray-600 dark:text-gray-400" 
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400" 
                            data-ar="أتطلع لسماع قصتك ومساعدتك في تحقيق أهدافك التقنية"
                            data-en="I look forward to hearing your story and helping you achieve your technical goals">
                            أتطلع لسماع قصتك ومساعدتك في تحقيق أهدافك التقنية
@@ -833,21 +1409,135 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 section-title" 
+                    data-ar="أسئلة شائعة" data-en="Frequently Asked Questions">أسئلة شائعة</h2>
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="إجابات على بعض الأسئلة الأكثر شيوعًا التي تلقيتها من العملاء"
+                   data-en="Answers to some of the most common questions I've received from clients">
+                   إجابات على بعض الأسئلة الأكثر شيوعًا التي تلقيتها من العملاء
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.2s]">
+                        <button class="faq-toggle flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                data-ar="كم تستغرق مدة إنجاز المشروع؟" 
+                                data-en="How long does it take to complete a project?">
+                                كم تستغرق مدة إنجاز المشروع؟
+                            </h3>
+                            <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600 dark:text-gray-400" 
+                               data-ar="تختلف مدة الإنجاز حسب نوع المشروع وتعقيده. عادةً ما تستغرق مشاريع التخرج من 2-4 أسابيع، بينما قد تستغرق المشاريع التجارية الكبيرة عدة أشهر. يمكنني تقديم تقدير زمني دقيق بعد مناقشة متطلبات المشروع بالتفصيل."
+                               data-en="The completion time varies depending on the type and complexity of the project. Graduation projects usually take 2-4 weeks, while large commercial projects may take several months. I can provide an accurate time estimate after discussing the project requirements in detail.">
+                               تختلف مدة الإنجاز حسب نوع المشروع وتعقيده. عادةً ما تستغرق مشاريع التخرج من 2-4 أسابيع، بينما قد تستغرق المشاريع التجارية الكبيرة عدة أشهر. يمكنني تقديم تقدير زمني دقيق بعد مناقشة متطلبات المشروع بالتفصيل.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.3s]">
+                        <button class="faq-toggle flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                data-ar="ما هي طرق الدفع المتاحة؟" 
+                                data-en="What payment methods are available?">
+                                ما هي طرق الدفع المتاحة؟
+                            </h3>
+                            <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600 dark:text-gray-400" 
+                               data-ar="أقبل الدفع عبر التحويل البنكي، وباي بال، وحوالات ويسترن يونيون. عادةً ما يتم تقسيم المبلغ إلى دفعتين: 50% مقدمة و50% عند تسليم المشروع. يمكننا مناقشة خيارات الدفع الأخرى إذا لزم الأمر."
+                               data-en="I accept payments via bank transfer, PayPal, and Western Union transfers. The amount is usually divided into two payments: 50% in advance and 50% upon project delivery. We can discuss other payment options if necessary.">
+                               أقبل الدفع عبر التحويل البنكي، وباي بال، وحوالات ويسترن يونيون. عادةً ما يتم تقسيم المبلغ إلى دفعتين: 50% مقدمة و50% عند تسليم المشروع. يمكننا مناقشة خيارات الدفع الأخرى إذا لزم الأمر.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.4s]">
+                        <button class="faq-toggle flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                data-ar="هل تقدم ضمانًا على المشاريع؟" 
+                                data-en="Do you offer a warranty on projects?">
+                                هل تقدم ضمانًا على المشاريع؟
+                            </h3>
+                            <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600 dark:text-gray-400" 
+                               data-ar="نعم، أقدم ضمانًا لمدة 3 أشهر على جميع المشاريع التي أنفذها. خلال هذه الفترة، سأقوم بإصلاح أي مشاكل أو أخطاء قد تظهر دون أي تكلفة إضافية. كما أقدم دعمًا فنيًا مستمرًا بعد انتهاء فترة الضمان."
+                               data-en="Yes, I offer a 3-month warranty on all projects I implement. During this period, I will fix any problems or errors that may appear at no additional cost. I also provide ongoing technical support after the warranty period ends.">
+                               نعم، أقدم ضمانًا لمدة 3 أشهر على جميع المشاريع التي أنفذها. خلال هذه الفترة، سأقوم بإصلاح أي مشاكل أو أخطاء قد تظهر دون أي تكلفة إضافية. كما أقدم دعمًا فنيًا مستمرًا بعد انتهاء فترة الضمان.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.5s]">
+                        <button class="faq-toggle flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                data-ar="هل يمكنك العمل على مشاريع عاجلة؟" 
+                                data-en="Can you work on urgent projects?">
+                                هل يمكنك العمل على مشاريع عاجلة؟
+                            </h3>
+                            <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600 dark:text-gray-400" 
+                               data-ar="نعم، يمكنني العمل على مشاريع عاجلة مع مراعاة أن المشاريع ذات المواعيد النهائية القصيرة قد تتطلب رسومًا إضافية. يفضل الاتصال بي مباشرة عبر الواتساب أو التليجرام لمناقشة المشاريع العاجلة."
+                               data-en="Yes, I can work on urgent projects, keeping in mind that projects with short deadlines may require additional fees. It's preferable to contact me directly via WhatsApp or Telegram to discuss urgent projects.">
+                               نعم، يمكنني العمل على مشاريع عاجلة مع مراعاة أن المشاريع ذات المواعيد النهائية القصيرة قد تتطلب رسومًا إضافية. يفضل الاتصال بي مباشرة عبر الواتساب أو التليجرام لمناقشة المشاريع العاجلة.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.6s]">
+                        <button class="faq-toggle flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                data-ar="هل تقدم شروحات للمشاريع بعد التسليم؟" 
+                                data-en="Do you provide explanations for projects after delivery?">
+                                هل تقدم شروحات للمشاريع بعد التسليم؟
+                            </h3>
+                            <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600 dark:text-gray-400" 
+                               data-ar="بالطبع، أقدم جلسة شرح كاملة لكل مشروع بعد تسليمه لضمان فهم العميل لكافة جوانب المشروع. كما يمكنني تقديم جلسات إضافية إذا لزم الأمر، مع توثيق كامل للمشروع وتقديم دليل المستخدم إذا كان المشروع يتطلب ذلك."
+                               data-en="Of course, I provide a full explanation session for each project after delivery to ensure the client understands all aspects of the project. I can also provide additional sessions if needed, with complete project documentation and user manual if the project requires it.">
+                               بالطبع، أقدم جلسة شرح كاملة لكل مشروع بعد تسليمه لضمان فهم العميل لكافة جوانب المشروع. كما يمكنني تقديم جلسات إضافية إذا لزم الأمر، مع توثيق كامل للمشروع وتقديم دليل المستخدم إذا كان المشروع يتطلب ذلك.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-10 md:py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-2">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
-                            <i class="fas fa-code text-white"></i>
+                        <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
+                            <i class="fas fa-code text-white text-lg"></i>
                         </div>
                         <div>
-                            <div class="text-xl font-bold">م.ابوبكر حسان</div>
+                            <div class="text-lg md:text-xl font-bold">م. أبوبكر حسان</div>
                             <div class="text-gray-400 text-sm">مهندس برمجيات متخصص</div>
                         </div>
                     </div>
-                    <p class="text-gray-400 leading-relaxed" 
+                    <p class="text-gray-400 text-sm leading-relaxed" 
                        data-ar="مهندس برمجيات متخصص في تطوير الحلول التقنية المبتكرة والذكاء الاصطناعي مع شغف لتحويل الأفكار إلى واقع"
                        data-en="Software engineer specialized in developing innovative technical solutions and AI with passion for turning ideas into reality">
                        مهندس برمجيات متخصص في تطوير الحلول التقنية المبتكرة والذكاء الاصطناعي مع شغف لتحويل الأفكار إلى واقع
@@ -855,72 +1545,122 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-bold mb-4" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#services" class="hover:text-white transition-colors" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
-                        <li><a href="#projects" class="hover:text-white transition-colors" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors" data-ar="التواصل" data-en="Contact">التواصل</a></li>
+                    <h3 class="text-base md:text-lg font-bold mb-4" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors hover:underline" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors hover:underline" data-ar="عني" data-en="About">عني</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors hover:underline" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors hover:underline" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors hover:underline" data-ar="التواصل" data-en="Contact">التواصل</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-bold mb-4" data-ar="تابعني" data-en="Follow Me">تابعني</h3>
-                    <div class="flex space-x-4">
+                    <h3 class="text-base md:text-lg font-bold mb-4" data-ar="تابعني" data-en="Follow Me">تابعني</h3>
+                    <div class="flex space-x-3 md:space-x-4">
                         <a href="https://t.me/EngAbobakrH" target="_blank" 
-                           class="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                           class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
                             <i class="fab fa-telegram"></i>
                         </a>
                         <a href="https://wa.me/+967735962962" target="_blank" 
-                           class="w-12 h-12 gradient-success rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                           class="w-10 h-10 md:w-12 md:h-12 gradient-success rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <a href="mailto:engabobakrh@gmail.com" 
-                           class="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                           class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8 text-center">
+            <div class="border-t border-gray-800 pt-6 md:pt-8 text-center text-sm">
                 <p class="text-gray-400" 
-                   data-ar="© 2024 مهندس ابوبكر حسان - جميع الحقوق محفوظة" 
+                   data-ar="© 2024 م. أبوبكر حسان - جميع الحقوق محفوظة" 
                    data-en="© 2024 Eng. Abobakr Hassan - All rights reserved">
-                   © 2023 مهندس ابوبكرحسان - جميع الحقوق محفوظة
+                   © 2024 م. أبوبكر حسان - جميع الحقوق محفوظة
                 </p>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
-        let isArabic = true;
+        // Initialize variables
+        let isArabic = true; // Initial state set to Arabic as per HTML dir="rtl"
         
-        function toggleLanguage() {
-            isArabic = !isArabic;
+        // Function to set language and direction
+        function setLanguage(lang) {
+            isArabic = (lang === 'ar');
             const elements = document.querySelectorAll('[data-ar][data-en]');
             const langText = document.getElementById('langText');
             
             elements.forEach(element => {
-                element.textContent = isArabic ? element.getAttribute('data-ar') : element.getAttribute('data-en');
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.placeholder = isArabic ? element.getAttribute('data-ar') : element.getAttribute('data-en');
+                } else {
+                    element.textContent = isArabic ? element.getAttribute('data-ar') : element.getAttribute('data-en');
+                }
             });
             
             langText.textContent = isArabic ? 'English' : 'عربي';
             document.documentElement.setAttribute('dir', isArabic ? 'rtl' : 'ltr');
             document.documentElement.setAttribute('lang', isArabic ? 'ar' : 'en');
+            
+            // Save language preference to localStorage
+            localStorage.setItem('language', lang);
         }
+
+        // Check for saved language preference or use default
+        const savedLanguage = localStorage.getItem('language') || (document.documentElement.getAttribute('dir') === 'rtl' ? 'ar' : 'en');
+        setLanguage(savedLanguage);
         
-        // Event listeners
-        document.getElementById('langToggle').addEventListener('click', toggleLanguage);
+        // Language Toggle
+        document.getElementById('langToggle').addEventListener('click', () => {
+            setLanguage(isArabic ? 'en' : 'ar');
+        });
+
+        // Theme Toggle
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
         
-        // Smooth scrolling
+        // Check for saved theme preference or system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const offset = document.querySelector('nav').offsetHeight; // Get nav height
+                    window.scrollTo({
+                        top: target.offsetTop - offset - 20, // Adjust for fixed nav and some padding
+                        behavior: 'smooth'
                     });
                 }
             });
@@ -928,22 +1668,147 @@
         
         // Scroll indicator
         window.addEventListener('scroll', () => {
-            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            const docHeight = document.body.scrollHeight;
+            const winHeight = window.innerHeight;
+            const scrollPos = window.scrollY;
+            // Calculate scroll percentage
+            const scrolled = (scrollPos / (docHeight - winHeight)) * 100;
+            // Update the width of the scroll indicator
             document.querySelector('.scroll-indicator').style.transform = `scaleX(${scrolled / 100})`;
+            
+            // Show/hide back to top button
+            const backToTop = document.getElementById('backToTop');
+            if (scrollPos > 300) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible');
+                backToTop.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        // Back to top button
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
         
         // Intersection Observer for animations
-        const observer = new IntersectionObserver((entries) => {
+        const fadeInElements = document.querySelectorAll('.animate-fade-in');
+        const slideUpElements = document.querySelectorAll('.animate-slide-up');
+        const scaleInElements = document.querySelectorAll('.animate-scale-in');
+
+        const observerOptions = {
+            root: null, // viewport
+            threshold: 0.1, // element is 10% visible
+            rootMargin: '0px'
+        };
+
+        const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in');
+                    entry.target.classList.remove('opacity-0'); // Make visible
+                    observer.unobserve(entry.target); // Stop observing once animated
                 }
             });
-        }, { threshold: 0.1 });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        // Observe all elements that should animate
+        fadeInElements.forEach(el => observer.observe(el));
+        slideUpElements.forEach(el => observer.observe(el));
+        scaleInElements.forEach(el => observer.observe(el));
         
-        document.querySelectorAll('.card-modern, .project-card').forEach(el => {
-            observer.observe(el);
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
         });
-    </script>
+        
+        // Projects filter functionality
+        document.querySelectorAll('[data-filter]').forEach(filter => {
+            filter.addEventListener('click', function() {
+                const filterValue = this.getAttribute('data-filter');
+                const projects = document.querySelectorAll('.project-card');
+                
+                // Update active filter button
+                document.querySelectorAll('[data-filter]').forEach(btn => {
+                    btn.classList.remove('bg-white', 'dark:bg-gray-700', 'text-primary-600', 'dark:text-primary-400', 'shadow-sm');
+                    btn.classList.add('text-gray-600', 'dark:text-gray-300', 'hover:bg-white', 'dark:hover:bg-gray-700');
+                });
+                
+                this.classList.remove('text-gray-600', 'dark:text-gray-300', 'hover:bg-white', 'dark:hover:bg-gray-700');
+                this.classList.add('bg-white', 'dark:bg-gray-700', 'text-primary-600', 'dark:text-primary-400', 'shadow-sm');
+                
+                // Filter projects
+                projects.forEach(project => {
+                    if (filterValue === 'all' || project.getAttribute('data-category') === filterValue) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Form submission
+       document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // جمع بيانات النموذج
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+        _replyto: document.getElementById('email').value, // لإضافة الرد التلقائي
+        _template: "table" // تنسيق جدولي للبريد
+    };
+
+    // إرسال البيانات إلى FormSubmit
+    fetch('https://formsubmit.co/ajax/engabobakrh@gmail.com', {
+        method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // رسالة نجاح
+        alert(isArabic ? 
+            `شكراً ${formData.name}، تم استلام رسالتك بنجاح! سأتواصل معك قريباً عبر ${formData.email}` : 
+            `Thank you ${formData.name}, your message has been received!`);
+        
+        // إعادة تعيين النموذج
+        this.reset();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert(isArabic ? 
+            'حدث خطأ أثناء الإرسال! يرجى التواصل عبر الواتساب' : 
+            'Sending failed! Please contact me via WhatsApp');
+    });
+}); 
+        
+        
+        
+            </script>
 </body>
 </html>
