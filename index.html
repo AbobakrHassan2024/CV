@@ -471,47 +471,47 @@
 <body class="body-bg-light dark:body-bg-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
     <!-- Scroll Indicator -->
     <div class="scroll-indicator"></div>
-    
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full glass-effect z-50 transition-all duration-300 py-3 md:py-4">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3 md:space-x-4">
-                    <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
-                        <i class="fas fa-code text-white text-lg md:text-xl"></i>
-                    </div>
-                    <div>
-                        <div class="font-bold text-base md:text-lg text-gray-800 dark:text-white">م. أبوبكر حسان</div>
-                        <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400">مهندس برمجيات</div>
-                    </div>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full glass-effect z-50 transition-all duration-300 py-3 md:py-4">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-reverse space-x-3 md:space-x-4 md:space-x-reverse">
+                <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-code text-white text-lg md:text-xl"></i>
                 </div>
-                
-                <!-- Navigation Links -->
-                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">الرئيسية</a>
-                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">عني</a>
-                    <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">الخدمات</a>
-                    <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">المهارات</a>
-                    <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">المشاريع</a>
-                    <a href="#testimonials" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">آراء العملاء</a>
-                    <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">التواصل</a>
-                </div>
-                
-                <!-- Theme and Language Toggle -->
-                <div class="flex items-center space-x-3">
-                    <button id="themeToggle" aria-label="تبديل الوضع الليلي" class="glass-effect p-2 rounded-lg hover:scale-105 transition-all duration-300">
-                        <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
-                        <i class="fas fa-moon text-indigo-300 hidden dark:inline"></i>
-                    </button>
-                    <button id="langToggle" aria-label="تبديل اللغة" class="glass-effect px-3 py-2 rounded-lg hover:scale-105 transition-all duration-300 text-sm md:text-base">
-                        <i class="fas fa-language ml-1"></i>
-                        <span id="langText">English</span>
-                    </button>
+                <div>
+                    <div class="font-bold text-base md:text-lg text-gray-800 dark:text-white">م. أبوبكر حسان</div>
+                    <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400">مهندس برمجيات</div>
                 </div>
             </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-reverse space-x-6 lg:space-x-8 lg:space-x-reverse">
+                <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">الرئيسية</a>
+                <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">نبذة عني</a>
+                <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">الخدمات</a>
+                <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">المهارات</a>
+                <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">المشاريع</a>
+                <a href="#testimonials" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">التوصيات</a>
+                <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 font-medium text-base">التواصل</a>
+            </div>
+
+            <!-- Theme and Language Toggle -->
+            <div class="flex items-center space-x-reverse space-x-3">
+                <button id="themeToggle" aria-label="تبديل الوضع الليلي" class="glass-effect p-2 rounded-lg hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                    <i class="fas fa-moon text-indigo-300 hidden dark:inline"></i>
+                </button>
+                <button id="langToggle" aria-label="تبديل اللغة" class="glass-effect px-3 py-2 rounded-lg hover:scale-105 transition-all duration-300 text-sm md:text-base">
+                    <i class="fas fa-language ml-1"></i>
+                    <span id="langText">English</span>
+                </button>
+            </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
@@ -558,7 +558,7 @@
                    أقدم حلولاً تقنية مبتكرة ومتطورة في مجال البرمجة والذكاء الاصطناعي مع خبرة واسعة في تطوير المشاريع الأكاديمية والتجارية
                 </p>
                 
-                <!-- Stats -->
+                <!-- Stats 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 max-w-5xl mx-auto">
                     <div class="glass-effect p-4 md:p-5 rounded-2xl animate-scale-in [animation-delay:1s] opacity-0">
                         <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">50+</div>
@@ -576,7 +576,7 @@
                         <div class="text-3xl md:text-4xl font-bold text-success-500 mb-2">24</div>
                         <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400" data-ar="دعم فني" data-en="Support">دعم فني</div>
                     </div>
-                </div>
+                </div>-->
                 
                 <!-- Call to Action -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up [animation-delay:1.4s] opacity-0">
@@ -607,8 +607,8 @@
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto">
       <!-- العنوان -->
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center section-title" data-ar="عني" data-en="About Me">
-        عني
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center section-title" data-ar="نبذة عني" data-en="About Me">
+        نبذة عني
       </h2>
 
       <!-- الفقرات -->
@@ -622,9 +622,10 @@
         </p>
 
         <p>
-          شاركت في بحث علمي منشور بعنوان:
-          <a href="https://doi.org/10.31272/1999-8716.2023.35.12" target="_blank" class="text-primary-600 hover:underline font-semibold">
-            تصنيف أورام الدماغ باستخدام تحويل رادون وخوارزمية GLCM
+          شاركت في بحث علمي تم نشره بعنوان:
+          <a href="https://muc.edu.iq/oldwebsite/mucj/35/english/e4-b35.pdf" target="_blank" class="text-primary-600 hover:underline font-semibold">
+            Recognition of Brain Tumors Using Radon Transform
+and Gray Level Co-Occurrence Matrix Algorithm
           </a>
           – نُشر في مجلة جامعة المعرفة العراقية (العدد 35)، حيث استخدمنا تقنيات الذكاء الاصطناعي لتحليل صور الرنين المغناطيسي وحققنا دقة تصنيف تجاوزت 98%.
         </p>
@@ -1689,40 +1690,55 @@ systemDesign: {
             </div>
             
             <div class="max-w-4xl mx-auto">
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-12">
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/+967735962962" target="_blank" 
-                       class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-green-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.2s]">
-                        <div class="w-16 h-16 md:w-20 md:h-20 gradient-success rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fab fa-whatsapp text-2xl md:text-3xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">WhatsApp</h3>
-                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="تواصل فوري ومباشر" data-en="Instant and direct communication">تواصل فوري ومباشر</p>
-                        <p class="text-green-600 font-semibold text-base md:text-lg">+967735962962</p>
-                    </a>
+                        <!-- Contact Methods -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-12">
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+967735962962" target="_blank" 
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-green-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.2s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gradient-success rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-whatsapp text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">WhatsApp</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="تواصل فوري ومباشر" data-en="Instant and direct communication">تواصل فوري ومباشر</p>
+                   
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/EngAbobakrH" target="_blank" 
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-blue-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.3s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-telegram text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">Telegram</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="مراسلة آمنة ومشاركة ملفات" data-en="Secure messaging and file sharing">مراسلة آمنة ومشاركة ملفات</p>
+                   
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:engabobakrh@gmail.com" 
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-red-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.4s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gradient-secondary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-envelope text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="للاستفسارات التفصيلية" data-en="For detailed inquiries">للاستفسارات التفصيلية</p>
                     
-                    <!-- Telegram -->
-                    <a href="https://t.me/EngAbobakrH" target="_blank" 
-                       class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-blue-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.3s]">
-                        <div class="w-16 h-16 md:w-20 md:h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fab fa-telegram text-2xl md:text-3xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">Telegram</h3>
-                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="مراسلة آمنة ومشاركة ملفات" data-en="Secure messaging and file sharing">مراسلة آمنة ومشاركة ملفات</p>
-                        <p class="text-blue-600 font-semibold text-base md:text-lg">@EngAbobakrH</p>
-                    </a>
-                    
-                    <!-- Email -->
-                    <a href="mailto:engabobakrh@gmail.com" 
-                       class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-red-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.4s]">
-                        <div class="w-16 h-16 md:w-20 md:h-20 gradient-secondary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-envelope text-2xl md:text-3xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
-                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="للاستفسارات التفصيلية" data-en="For detailed inquiries">للاستفسارات التفصيلية</p>
-                        <p class="text-red-600 font-semibold text-base md:text-lg">engabobakrh@gmail.com</p>
-                    </a>
-                </div>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/19efGfNsRi/" target="_blank" 
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-blue-700 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.5s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#1877F2] rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-facebook-f text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">Facebook</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="مشاركة وبناء علاقات احترافية" data-en="Share and connect professionally">مشاركة وبناء علاقات احترافية</p>
+                  
+                </a>
+
+</div>
+
                 
                 <!-- Contact Form -->
                 <div class="card-modern rounded-2xl p-6 md:p-8 opacity-0 animate-slide-up [animation-delay:0.5s]">
@@ -1932,7 +1948,7 @@ systemDesign: {
         <h3 class="text-base md:text-lg font-bold mb-4" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
         <ul class="space-y-2 text-gray-400 text-sm">
           <li><a href="#home" class="hover:text-white transition-colors hover:underline" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
-          <li><a href="#about" class="hover:text-white transition-colors hover:underline" data-ar="عني" data-en="About">عني</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors hover:underline" data-ar="عني نبذة" data-en="About">نبذة عني </a></li>
           <li><a href="#services" class="hover:text-white transition-colors hover:underline" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
           <li><a href="#projects" class="hover:text-white transition-colors hover:underline" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
           <li><a href="#contact" class="hover:text-white transition-colors hover:underline" data-ar="التواصل" data-en="Contact">التواصل</a></li>
@@ -1941,7 +1957,7 @@ systemDesign: {
 
       <!-- تابعني -->
       <div>
-        <h3 class="text-base md:text-lg font-bold mb-4" data-ar="تابعني" data-en="Follow Me">تابعني</h3>
+        <h3 class="text-base md:text-lg font-bold mb-4" data-ar="تابعني" data-en="Follow Me">نبذة</h3>
         <div class="flex flex-row-reverse gap-3 md:gap-4">
           <a href="https://t.me/EngAbobakrH" target="_blank" rel="noopener noreferrer"
              class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
