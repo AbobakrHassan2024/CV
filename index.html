@@ -2263,42 +2263,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-
 <script>
-  const langToggleBtn = document.getElementById('langToggle');
+  // زر تغيير اللغة
+  const langToggle = document.getElementById('langToggle');
   const langText = document.getElementById('langText');
-  const htmlTag = document.documentElement;
+  let currentLang = 'ar';
 
-  // استرجاع اللغة من التخزين المحلي
-  const currentLang = localStorage.getItem('site-lang') || 'ar';
-
-  function setLanguage(lang) {
-    const isArabic = lang === 'ar';
-    document.body.dir = isArabic ? 'rtl' : 'ltr';
-    htmlTag.lang = lang;
-
-    // تغيير النصوص حسب data attributes
-    document.querySelectorAll('[data-ar][data-en]').forEach(el => {
-      el.textContent = el.dataset[lang];
-    });
-
-    // تحديث زر اللغة
-    langText.textContent = isArabic ? 'English' : 'العربية';
-
-    // حفظ الإعداد
-    localStorage.setItem('site-lang', lang);
-  }
-
-  langToggleBtn.addEventListener('click', () => {
-    const newLang = htmlTag.lang === 'ar' ? 'en' : 'ar';
-    setLanguage(newLang);
-  });
-
-  // تفعيل اللغة عند التحميل
-  document.addEventListener('DOMContentLoaded', () => {
-    setLanguage(currentLang);
+  langToggle.addEventListener('click', () => {
+    const elements = document.querySelectorAll('[data-ar][data-en]');
+    if (currentLang === 'ar') {
+      elements.forEach(el => {
+        if (el.dataset.en) el.textContent = el.dataset.en;
+      });
+      langText.textContent = 'العربية';
+      currentLang = 'en';
+      document.documentElement.lang = "en";
+      document.documentElement.dir = "ltr";
+    } else {
+      elements.forEach(el => {
+        if (el.dataset.ar) el.textContent = el.dataset.ar;
+      });
+      langText.textContent = 'English';
+      currentLang = 'ar';
+      document.documentElement.lang = "ar";
+      document.documentElement.dir = "rtl";
+    }
   });
 </script>
+
+ 
 
 </body>
 </html>
