@@ -28,7 +28,7 @@
 I’m **Abobakr Ali Hassan**, a Yemeni software engineer and researcher in Artificial Intelligence. I offer full solutions in programming, system analysis, and academic support.  
 أنا **أبوبكر علي حسان**، مهندس برمجيات يمني وباحث في الذكاء الاصطناعي. أقدم حلولًا تقنية شاملة في البرمجة وتحليل الأنظمة والمشاريع الأكاديمية.
 
----
+
 
 ## 💻 Skills & Technologies
 
@@ -43,7 +43,7 @@ I’m **Abobakr Ali Hassan**, a Yemeni software engineer and researcher in Artif
   <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white"/>
 </p>
 
----
+
 
 ## 📫 Contact Me | للتواصل
 
@@ -52,13 +52,11 @@ I’m **Abobakr Ali Hassan**, a Yemeni software engineer and researcher in Artif
 - 💼 LinkedIn: [linkedin.com/in/abobakr-hassan-eng](https://www.linkedin.com/in/abobakr-hassan-eng)  
 - 🌐 Website: [abobakrhassan2024.github.io/CV](https://abobakrhassan2024.github.io/CV)
 
----
 
-## 🔍 Keywords | كلمات مفتاحية
 
 > أبوبكر حسان، أبوبكر علي حسان، المهندس أبوبكر، مهندس برمجيات يمني، برمجة مواقع، ذكاء اصطناعي، مشاريع تخرج، باحث يمني، تحليل نظم، مطور ويب، دعم فني عن بعد
 
----
 
-> ✨ *This profile is optimized to appear in search results when someone searches for: “أبوبكر حسان”, “المهندس أبوبكر”, “مهندس برمجيات من اليمن”...*
+
+
 
