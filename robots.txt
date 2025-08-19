@@ -1,3 +1,4 @@
-User-agent: *
+User-agent: Bingbot
 Allow: /
+
 Sitemap: https://abobakrhassan2024.github.io/CV/sitemap.xml
