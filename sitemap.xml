@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://abobakrhassan2024.github.io/CV/</loc>
     <lastmod>2025-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- أقسام الموقع -->
+  <url>
+    <loc>https://abobakrhassan2024.github.io/CV/#about</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://abobakrhassan2024.github.io/CV/#services</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://abobakrhassan2024.github.io/CV/#skills</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://abobakrhassan2024.github.io/CV/#projects</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://abobakrhassan2024.github.io/CV/#testimonials</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://abobakrhassan2024.github.io/CV/#contact</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
