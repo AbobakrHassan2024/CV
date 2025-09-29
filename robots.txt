@@ -1,9 +1,4 @@
-# السماح لجميع عناكب محركات البحث بفهرسة الموقع
 User-agent: *
 Allow: /
-
-# موقع خريطة الموقع (Sitemap)
 Sitemap: https://abobakrhassan2024.github.io/CV/sitemap.xml
-
-# يمكنك إضافة قواعد خاصة إذا أردت منع صفحات معينة لاحقًا، مثال:
 # Disallow: /private/
