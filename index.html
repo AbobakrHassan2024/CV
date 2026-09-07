@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html lang="ar-sa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                }
+                if (localStorage.getItem('language') === 'en') {
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.documentElement.setAttribute('lang', 'en');
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <meta name="google-site-verification" content="hl3ca2cEtDcZlJx2pNPL4mltV6ZrT-oXZdBsHplzA90">
+    <meta name="msvalidate.01" content="DC644E5B6A822F21D791DA9843D1FEC2">
+    <title>أبوبكر حسان | مهندس برمجيات | حلول تقنية مبتكرة</title>
+    <meta name="description" content="أبوبكر حسان، مهندس برمجيات من تعز – اليمن. أقدّم خدمات تطوير المواقع، الذكاء الاصطناعي، مشاريع التخرج، وتحليل الأنظمة.">
+    <meta name="keywords" content="أبوبكر حسان, المهندس أبوبكر حسان, مهندس برمجيات, تعز, اليمن, تطوير مواقع, الذكاء الاصطناعي, Abobakr Hassan, Software Engineer, Yemen, AI Specialist, Graduation Projects">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="أبوبكر حسان">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1c1917">
+    <link rel="canonical" href="https://abobakrhassan2024.github.io/CV/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="أبوبكر حسان | مهندس برمجيات">
+    <meta property="og:description" content="مهندس برمجيات من تعز – اليمن. تطوير مواقع، ذكاء اصطناعي، مشاريع تخرج، وتحليل أنظمة.">
+    <meta property="og:url" content="https://abobakrhassan2024.github.io/CV/">
+    <meta property="og:site_name" content="أبوبكر حسان">
+    <meta property="og:image" content="https://abobakrhassan2024.github.io/CV/Abobakr_Hassan44.png">
+    <meta name="twitter:image" content="https://abobakrhassan2024.github.io/CV/Abobakr_Hassan44.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="أبوبكر حسان | مهندس برمجيات">
+    <meta name="twitter:description" content="مهندس برمجيات من تعز – اليمن متخصص في تطوير المواقع والذكاء الاصطناعي.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4F46E5',
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            200: '#C7D2FE',
+                            300: '#A5B4FC',
+                            400: '#818CF8',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            800: '#3730A3',
+                            900: '#312E81'
+                        },
+                        secondary: {
+                            DEFAULT: '#7C3AED',
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95'
+                        },
+                        accent: {
+                            DEFAULT: '#EC4899',
+                            50: '#FDF2F8',
+                            100: '#FCE7F3',
+                            200: '#FBCFE8',
+                            300: '#F9A8D4',
+                            400: '#F472B6',
+                            500: '#EC4899',
+                            600: '#DB2777',
+                            700: '#BE185D',
+                            800: '#9D174D',
+                            900: '#831843'
+                        },
+                        dark: {
+                            DEFAULT: '#0F172A',
+                            50: '#F8FAFC',
+                            100: '#F1F5F9',
+                            200: '#E2E8F0',
+                            300: '#CBD5E1',
+                            400: '#94A3B8',
+                            500: '#64748B',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1E293B',
+                            900: '#0F172A'
+                        }
+                    },
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'scale-in': 'scaleIn 0.5s ease-out forwards',
+                        'gradient-flow': 'gradient-flow 8s ease infinite alternate',
+                        'wave': 'wave 2s linear infinite',
+                        'slide-down': 'slideDown 0.4s ease-out forwards',
+                        'slide-up-hide': 'slideUpHide 0.4s ease-out forwards'
+                    },
+                    keyframes: {
+                        wave: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '10%': { transform: 'rotate(14deg)' },
+                            '20%': { transform: 'rotate(-8deg)' },
+                            '30%': { transform: 'rotate(14deg)' },
+                            '40%': { transform: 'rotate(-4deg)' },
+                            '50%': { transform: 'rotate(10deg)' },
+                            '60%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(0deg)' }
+                        },
+                        slideDown: {
+                            '0%': { opacity: '0', maxHeight: '0px', transform: 'translateY(-10px)' },
+                            '100%': { opacity: '1', maxHeight: '1000px', transform: 'translateY(0)' }
+                        },
+                        slideUpHide: {
+                            '0%': { opacity: '1', maxHeight: '1000px', transform: 'translateY(0)' },
+                            '100%': { opacity: '0', maxHeight: '0px', transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "أبوبكر حسان",
+  "alternateName": "Abobakr Hassan",
+  "url": "https://abobakrhassan2024.github.io/CV",
+  "sameAs": [
+    "https://github.com/abobakrhassan2024",
+    "https://www.linkedin.com/in/abobakr-hassan-eng",
+    "https://t.me/EngAbobakrH",
+    "https://abobakrh.com"
+  ],
+  "email": "mailto:engabobakrh@gmail.com",
+  "telephone": "+967735962962",
+  "jobTitle": "مهندس برمجيات",
+  "description": "مهندس برمجيات من تعز – اليمن، متخصص في تطوير المواقع، الذكاء الاصطناعي، مشاريع التخرج، وتحليل الأنظمة.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Taiz",
+    "addressCountry": "YE"
+  }
+}
+</script>
+
+
+
+
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Keyframe Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes gradient-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .section-content {
+            display: none;
+        }
+
+        .section-content.is-open {
+            display: block;
+            animation: fadeIn 0.35s ease-out;
+        }
+
+        .section-header {
+            cursor: pointer;
+            margin-bottom: 0;
+            padding: 0.35rem 0;
+            user-select: none;
+        }
+
+        .section-toggle {
+            color: #9a7b3c;
+            transition: transform 0.3s ease;
+        }
+
+        .section-toggle.rotated {
+            transform: rotate(180deg);
+        }
+
+        .dark .section-toggle {
+            color: #d4af6e;
+        }
+
+        section.has-toggle {
+            padding-top: 1.15rem;
+            padding-bottom: 1.15rem;
+            transition: padding 0.3s ease;
+            scroll-margin-top: 5.5rem;
+        }
+
+        section.has-toggle.is-open {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .luxury-nav {
+            background: rgba(255, 252, 248, 0.78);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(184, 149, 86, 0.28);
+            box-shadow: 0 10px 40px rgba(28, 25, 23, 0.06);
+        }
+
+        .dark .luxury-nav {
+            background: rgba(12, 16, 24, 0.82);
+            border-bottom-color: rgba(212, 175, 110, 0.22);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28);
+        }
+
+        .luxury-nav.is-scrolled {
+            box-shadow: 0 12px 32px rgba(28, 25, 23, 0.1);
+        }
+
+        .luxury-mark {
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(160deg, #1c1917 0%, #3f2e1e 100%);
+            color: #f3e6c5;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            box-shadow: 0 0 0 1px #d4af6e, 0 8px 20px rgba(28, 25, 23, 0.2);
+        }
+
+        .dark .luxury-mark {
+            background: linear-gradient(160deg, #111827 0%, #2a2116 100%);
+            box-shadow: 0 0 0 1px #d4af6e, 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .luxury-hero {
+            background:
+                radial-gradient(ellipse at 18% 20%, rgba(212, 175, 110, 0.16), transparent 42%),
+                radial-gradient(ellipse at 88% 80%, rgba(79, 70, 229, 0.08), transparent 40%),
+                linear-gradient(180deg, #fbf7f0 0%, #f4efe6 52%, #f8fafc 100%);
+        }
+
+        .dark .luxury-hero {
+            background:
+                radial-gradient(ellipse at 18% 20%, rgba(212, 175, 110, 0.12), transparent 42%),
+                radial-gradient(ellipse at 88% 80%, rgba(79, 70, 229, 0.16), transparent 40%),
+                linear-gradient(180deg, #0b1220 0%, #111827 60%, #0f172a 100%);
+        }
+
+        .hero-portrait-wrap {
+            position: relative;
+            display: inline-flex;
+            padding: 0.85rem;
+        }
+
+        .hero-portrait-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 8%;
+            border-radius: 9999px;
+            background: radial-gradient(circle, rgba(212, 175, 110, 0.35), transparent 68%);
+            filter: blur(18px);
+            z-index: 0;
+        }
+
+        .hero-portrait-frame {
+            position: relative;
+            z-index: 1;
+            padding: 7px;
+            border-radius: 9999px;
+            background:
+                linear-gradient(160deg, #f8e7b8, #c9a46a 28%, #7a5b2e 52%, #e8d5a3 78%, #b8904a);
+            box-shadow:
+                0 18px 40px rgba(28, 25, 23, 0.18),
+                0 0 0 8px rgba(255, 255, 255, 0.55);
+        }
+
+        .dark .hero-portrait-frame {
+            box-shadow:
+                0 22px 48px rgba(0, 0, 0, 0.45),
+                0 0 0 8px rgba(15, 23, 42, 0.7);
+        }
+
+        .hero-portrait {
+            width: 12.5rem;
+            height: 15.5rem;
+            border-radius: 9999px;
+            overflow: hidden;
+            background: #111827;
+            border: 3px solid #1c1917;
+        }
+
+        .dark .hero-portrait {
+            border-color: #0b1220;
+        }
+
+        .hero-portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 10%;
+        }
+
+        .hero-portrait-ornament {
+            position: absolute;
+            left: 50%;
+            bottom: 0.15rem;
+            z-index: 2;
+            width: 2.15rem;
+            height: 2.15rem;
+            transform: translateX(-50%);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(160deg, #f8e7b8, #c9a46a 40%, #7a5b2e);
+            color: #1c1917;
+            box-shadow: 0 8px 18px rgba(28, 25, 23, 0.22);
+            font-size: 0.7rem;
+        }
+
+        .luxury-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #9a7b3c;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        [dir="ltr"] .luxury-kicker {
+            letter-spacing: 0.18em;
+        }
+
+        .dark .luxury-kicker {
+            color: #d4af6e;
+        }
+
+        .luxury-kicker::before,
+        .luxury-kicker::after {
+            content: '';
+            width: 2rem;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af6e, transparent);
+        }
+
+        .luxury-name {
+            font-family: 'Amiri', 'Cairo', serif;
+            background: linear-gradient(120deg, #1c1917 0%, #7a5b2e 45%, #1c1917 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .dark .luxury-name {
+            background: linear-gradient(120deg, #f8e7b8 0%, #d4af6e 50%, #f5f5f4 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .luxury-btn {
+            background: linear-gradient(135deg, #1c1917 0%, #3f2e1e 100%);
+            color: #f8e7b8;
+            box-shadow: 0 10px 24px rgba(28, 25, 23, 0.22);
+        }
+
+        .luxury-btn:hover {
+            box-shadow: 0 14px 28px rgba(28, 25, 23, 0.28);
+        }
+
+        .luxury-btn-outline {
+            border: 1px solid rgba(184, 149, 86, 0.55);
+            background: rgba(255, 255, 255, 0.45);
+            color: #1c1917;
+        }
+
+        .dark .luxury-btn-outline {
+            background: rgba(15, 23, 42, 0.45);
+            color: #f8e7b8;
+            border-color: rgba(212, 175, 110, 0.4);
+        }
+
+        @media (min-width: 768px) {
+            .luxury-mark {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .hero-portrait {
+                width: 15rem;
+                height: 18.5rem;
+            }
+        }
+        
+        /* Gradient Backgrounds */
+        .gradient-primary {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, #EC4899 0%, #F472B6 100%);
+        }
+        
+        .gradient-success {
+            background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+        }
+        
+        /* Glass Effect */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Modern Card Styles */
+        .card-modern {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .dark .card-modern {
+            background: #1E293B;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.12);
+        }
+        
+        .dark .card-modern:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Section Title Underline Effect */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.75rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 72px;
+            height: 3px;
+            background: linear-gradient(90deg, #4F46E5, #EC4899);
+            border-radius: 2px;
+        }
+
+        [dir="ltr"] .section-title::after {
+            right: auto;
+            left: 0;
+        }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #1c1917, #d4af6e, #1c1917);
+            transform-origin: left;
+            transform: scaleX(0);
+            z-index: 9999;
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Navigation Link Hover Effect */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+            padding-bottom: 0.25rem;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #c9a46a, #d4af6e);
+            transition: width 0.3s ease-out;
+            border-radius: 2px;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Project Card Specific Styles */
+        .project-card {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4F46E5, #EC4899, #10B981);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease-out;
+        }
+        
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        /* Floating Shapes in Hero Section */
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            background: linear-gradient(45deg, rgba(212, 175, 110, 0.18), rgba(28, 25, 23, 0.08));
+            border-radius: 50%;
+            animation: none;
+            filter: blur(40px);
+        }
+        
+        /* Body Background */
+        .body-bg-light {
+            background-color: #F8FAFC;
+            background-image: 
+                radial-gradient(at 80% 20%, rgba(224, 231, 255, 0.5) 0px, transparent 50%),
+                radial-gradient(at 20% 80%, rgba(199, 210, 254, 0.3) 0px, transparent 50%);
+        }
+        
+        .dark .body-bg-dark {
+            background-color: #0F172A;
+            background-image: 
+                radial-gradient(at 80% 20%, rgba(30, 41, 59, 0.7) 0px, transparent 50%),
+                radial-gradient(at 20% 80%, rgba(15, 23, 42, 0.8) 0px, transparent 50%);
+        }
+        
+        /* Testimonial Card */
+        .testimonial-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            font-size: 120px;
+            color: rgba(79, 70, 229, 0.1);
+            font-family: serif;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .dark .testimonial-card::before {
+            color: rgba(199, 210, 254, 0.05);
+        }
+        
+        /* Skill Bar */
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #E2E8F0;
+            overflow: hidden;
+        }
+        
+        .dark .skill-bar {
+            background-color: #334155;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #4F46E5, #7C3AED);
+            transition: width 1s ease-out;
+        }
+        
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .floating-shapes { display: none; }
+            .hero-portrait {
+                width: 10.5rem;
+                height: 13rem;
+            }
+            
+            .section-title::after {
+                width: 60px;
+                height: 3px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 12pt;
+            }
+            
+            .no-print {
+                display: none !important;
+            }
+            
+            a[href^="http"]::after {
+                content: " (" attr(href) ")";
+                font-size: 0.8em;
+                font-weight: normal;
+            }
+        }
+        
+        
+    .card-modern {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}    
+        
+        
+    .skill-circle {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .progress-ring {
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+        stroke-dasharray: 251.2; /* 2 * PI * 40 */
+        stroke-dashoffset: 251.2;
+        transition: stroke-dashoffset 1.5s ease-out;
+    }
+    .skill-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+    .skill-icon:hover {
+        transform: translateY(-5px);
+    }
+    .skill-name {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #4b5563; /* text-gray-600 */
+    }
+    .dark .skill-name {
+        color: #d1d5db; /* dark:text-gray-300 */
+    }
+    .soft-skill {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #374151; /* text-gray-700 */
+        background-color: #f3f4f6; /* bg-gray-100 */
+        padding: 0.75rem;
+        border-radius: 0.75rem; /* rounded-xl */
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .dark .soft-skill {
+        color: #e5e7eb; /* dark:text-gray-200 */
+        background-color: #374151; /* dark:bg-gray-700 */
+    }
+    .soft-skill:hover {
+        transform: translateX(5px);
+        background-color: #e5e7eb; /* bg-gray-200 */
+    }
+    .dark .soft-skill:hover {
+        background-color: #4b5563;
+    }
+
+    .hidden-service {
+        display: none;
+    }
+
+    .hidden-service.is-visible {
+        display: block;
+    }
+
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        right: 1rem;
+        z-index: 10000;
+        background: #4F46E5;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .skip-link:focus {
+        top: 1rem;
+    }
+
+    .img-fallback {
+        width: 100%;
+        height: 100%;
+        min-height: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #4F46E5, #7C3AED);
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 1.75rem;
+        left: 1.75rem;
+        z-index: 40;
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 9999px;
+        background: #25D366;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        transition: transform 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.08);
+    }
+
+    [dir="ltr"] .whatsapp-float {
+        left: auto;
+        right: 1.75rem;
+    }
+
+    [dir="ltr"] #backToTop {
+        right: auto;
+        left: 2rem;
+    }
+
+    .nav-link.active-link {
+        color: #9a7b3c;
+        font-weight: 700;
+    }
+
+    .dark .nav-link.active-link {
+        color: #d4af6e;
+    }
+
+    .luxury-nav .nav-link:hover {
+        color: #9a7b3c;
+    }
+
+    .dark .luxury-nav .nav-link:hover {
+        color: #d4af6e;
+    }
+
+    .filter-btn {
+        white-space: nowrap;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+    </style>
+</head>
+
+<body class="body-bg-light dark:body-bg-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
+    <a href="#home" class="skip-link" data-ar="تخطي إلى المحتوى" data-en="Skip to content">تخطي إلى المحتوى</a>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true"></div>
+<!-- Navigation -->
+<nav class="luxury-nav fixed top-0 w-full z-50 transition-all duration-300 py-3 md:py-4 no-print">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-reverse space-x-3 md:space-x-4 md:space-x-reverse">
+                <div class="luxury-mark" aria-hidden="true" data-ar="أح" data-en="AH">أح</div>
+                <div>
+                    <div class="font-bold text-base md:text-lg text-gray-800 dark:text-white" data-ar="أبوبكر حسان" data-en="Abobakr Hassan">أبوبكر حسان</div>
+                    <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400" data-ar="مهندس برمجيات" data-en="Software Engineer">مهندس برمجيات</div>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-reverse space-x-5 xl:space-x-7 xl:space-x-reverse">
+                <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="نبذة" data-en="About">نبذة</a>
+                <a href="#services" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="المهارات" data-en="Skills">المهارات</a>
+                <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+                <a href="#testimonials" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="التوصيات" data-en="Reviews">التوصيات</a>
+                <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="التواصل" data-en="Contact">التواصل</a>
+                <a href="#faq" class="nav-link text-gray-700 dark:text-gray-300 font-medium text-base" data-ar="الأسئلة" data-en="FAQ">الأسئلة</a>
+                <a href="#about" class="nav-link font-semibold text-base" style="color:#9a7b3c" data-ar="بكر الحلول الرقمية" data-en="Bakr Digital Solutions">بكر الحلول الرقمية</a>
+            </div>
+
+            <!-- Theme and Language Toggle -->
+            <div class="flex items-center space-x-reverse space-x-3">
+                <button id="themeToggle" aria-label="تبديل الوضع الليلي" data-ar-label="تبديل الوضع الليلي" data-en-label="Toggle dark mode" class="luxury-btn-outline p-2 rounded-full hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                    <i class="fas fa-moon text-amber-200 hidden dark:inline"></i>
+                </button>
+                <button id="langToggle" aria-label="تبديل اللغة" data-ar-label="تبديل اللغة" data-en-label="Switch language" class="luxury-btn-outline px-3 py-2 rounded-full hover:scale-105 transition-all duration-300 text-sm md:text-base">
+                    <i class="fas fa-language ml-1"></i>
+                    <span id="langText">English</span>
+                </button>
+                <button id="mobileMenuToggle" type="button" aria-label="فتح قائمة التنقل" data-ar-label="فتح قائمة التنقل" data-en-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu" class="lg:hidden p-2 rounded-full luxury-btn-outline">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden mt-4 pb-4 border-t border-amber-200/40 dark:border-amber-200/10">
+            <div class="flex flex-col space-y-3 pt-4">
+                <a href="#home" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="#about" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="نبذة" data-en="About">نبذة</a>
+                <a href="#services" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                <a href="#skills" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="المهارات" data-en="Skills">المهارات</a>
+                <a href="#projects" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+                <a href="#testimonials" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="التوصيات" data-en="Reviews">التوصيات</a>
+                <a href="#contact" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="التواصل" data-en="Contact">التواصل</a>
+                <a href="#faq" class="nav-link mobile-nav-link text-gray-700 dark:text-gray-300 font-medium text-base py-2" data-ar="الأسئلة" data-en="FAQ">الأسئلة</a>
+                <a href="#about" class="nav-link mobile-nav-link font-semibold text-base py-2" style="color:#9a7b3c" data-ar="بكر الحلول الرقمية" data-en="Bakr Digital Solutions">بكر الحلول الرقمية</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section id="home" class="luxury-hero relative min-h-[88vh] flex items-center overflow-hidden pt-24 pb-16">
+    <div class="floating-shapes" aria-hidden="true">
+        <div class="floating-shape w-64 h-64 top-1/4 right-1/4"></div>
+        <div class="floating-shape w-80 h-80 bottom-1/3 left-1/4"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div class="flex justify-center lg:justify-center">
+                <div class="hero-portrait-wrap">
+                    <div class="hero-portrait-frame">
+                        <div class="hero-portrait">
+                            <img src="Abobakr_Hassan44.png"
+                                 alt="أبوبكر حسان"
+                                 width="240"
+                                 height="296"
+                                 fetchpriority="high"
+                                 decoding="async">
+                        </div>
+                    </div>
+                    <span class="hero-portrait-ornament" aria-hidden="true">
+                        <i class="fas fa-gem"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="text-center lg:text-start">
+                <p class="luxury-kicker mb-5" data-ar="مهندس برمجيات" data-en="SOFTWARE ENGINEER">مهندس برمجيات</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    <span class="luxury-name"
+                          data-ar="أبوبكر حسان" data-en="Eng. Abobakr Hassan">
+                        أبوبكر حسان
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-5 font-medium"
+                   data-ar="مهندس برمجيات ومطور حلول تقنية" data-en="Software Engineer & Tech Solutions Developer">
+                   مهندس برمجيات ومطور حلول تقنية
+                </p>
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+                   data-ar="أقدم حلولاً تقنية واضحة في تطوير المواقع، الذكاء الاصطناعي، وتحليل الأنظمة للمشاريع الأكاديمية والتجارية."
+                   data-en="I deliver clear technical solutions in web development, AI, and system analysis for academic and commercial projects.">
+                   أقدم حلولاً تقنية واضحة في تطوير المواقع، الذكاء الاصطناعي، وتحليل الأنظمة للمشاريع الأكاديمية والتجارية.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#contact" class="luxury-btn px-6 py-3 md:px-8 md:py-3.5 rounded-full font-semibold transition-shadow duration-300 flex items-center justify-center text-base">
+                        <i class="fas fa-paper-plane ml-2"></i>
+                        <span data-ar="تواصل معي" data-en="Contact Me">تواصل معي</span>
+                    </a>
+                    <a href="#projects" class="luxury-btn-outline px-6 py-3 md:px-8 md:py-3.5 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center text-base">
+                        <i class="fas fa-briefcase ml-2"></i>
+                        <span data-ar="معرض الأعمال" data-en="View Portfolio">معرض الأعمال</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- About Section -->
+<section id="about" class="has-toggle py-16 md:py-20 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="about-content" aria-expanded="false" data-section="about">
+        <div class="flex items-center">
+        <div class="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center ml-3">
+          <i class="fas fa-user text-white"></i>
+        </div>
+        <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="نبذة" data-en="About Me">
+          نبذة
+        </h2>
+        </div>
+        <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+    </div>
+
+    <!-- Section Content -->
+    <div id="about-content" class="section-content">
+      <div class="max-w-4xl mx-auto">
+        <!-- الفقرات -->
+        <div class="space-y-4 text-sm sm:text-base md:text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+          <p data-ar="أبوبكر حسان، مهندس برمجيات وباحث في الذكاء الاصطناعي من تعز – اليمن. لدي خبرة واسعة في تطوير تطبيقات الويب وسطح المكتب، تحليل الأنظمة، تصميم واجهات الاستخدام، تحسين محركات البحث، وصياغة المحتوى الرقمي."
+             data-en="Abobakr Hassan is a software engineer and AI researcher from Taiz, Yemen, with extensive experience in web and desktop development, system analysis, UI design, SEO, and digital content.">
+             أبوبكر حسان، مهندس برمجيات وباحث في الذكاء الاصطناعي من تعز – اليمن. لدي خبرة واسعة في تطوير تطبيقات الويب وسطح المكتب، تحليل الأنظمة، تصميم واجهات الاستخدام، تحسين محركات البحث، وصياغة المحتوى الرقمي.
+          </p>
+
+          <p data-ar="أقدم حلولًا تقنية شاملة تشمل إصلاح الأعطال البرمجية والعتادية، تثبيت الأنظمة الأساسية والافتراضية، وتنفيذ مشاريع تعليمية وتجارية باستخدام تقنيات مثل Python، PHP، JavaScript، HTML/CSS، C#، C++، Oracle، UML، وMySQL."
+             data-en="I provide complete technical solutions including hardware and software troubleshooting, OS installation, and academic or commercial projects using Python, PHP, JavaScript, HTML/CSS, C#, C++, Oracle, UML, and MySQL.">
+            أقدم حلولًا تقنية شاملة تشمل إصلاح الأعطال البرمجية والعتادية، تثبيت الأنظمة الأساسية والافتراضية، وتنفيذ مشاريع تعليمية وتجارية باستخدام تقنيات مثل Python، PHP، JavaScript، HTML/CSS، C#، C++، Oracle، UML، وMySQL.
+          </p>
+
+          <p>
+            <span data-ar="شاركت في بحث علمي تم نشره بعنوان:" data-en="I contributed to a published paper titled:">شاركت في بحث علمي تم نشره بعنوان:</span>
+            <a href="https://muc.edu.iq/oldwebsite/mucj/35/english/e4-b35.pdf" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline font-semibold">
+              Recognition of Brain Tumors Using Radon Transform and Gray Level Co-Occurrence Matrix Algorithm
+            </a>
+            <span data-ar=" – نُشر في مجلة جامعة المعرفة العراقية (العدد 35)، حيث استخدمنا تقنيات الذكاء الاصطناعي لتحليل صور الرنين المغناطيسي وحققنا دقة تصنيف تجاوزت 98%."
+                  data-en=" – published in Al-Maarif University College Journal (issue 35). We used AI techniques to analyze MRI images and achieved a classification accuracy above 98%.">
+             – نُشر في مجلة جامعة المعرفة العراقية (العدد 35)، حيث استخدمنا تقنيات الذكاء الاصطناعي لتحليل صور الرنين المغناطيسي وحققنا دقة تصنيف تجاوزت 98%.
+            </span>
+          </p>
+
+          <p data-ar="أؤمن بأن التقنية يجب أن تكون بسيطة وواضحة، وأعمل على نشر الثقافة التقنية، وتقديم محتوى تعليمي مبسط، ودعم المشاريع المحلية بأدوات رقمية فعالة، مع التركيز على توظيف الذكاء الاصطناعي لخدمة المجتمع."
+             data-en="I believe technology should stay simple and clear. I share practical technical knowledge, support local projects with useful digital tools, and apply AI in ways that serve the community.">
+            أؤمن بأن التقنية يجب أن تكون بسيطة وواضحة، وأعمل على نشر الثقافة التقنية، وتقديم محتوى تعليمي مبسط، ودعم المشاريع المحلية بأدوات رقمية فعالة، مع التركيز على توظيف الذكاء الاصطناعي لخدمة المجتمع.
+          </p>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+            <div class="card-modern rounded-xl p-4 text-center">
+              <div class="text-2xl font-extrabold text-primary-600">1</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400" data-ar="بحث علمي منشور" data-en="Published Paper">بحث علمي منشور</div>
+            </div>
+            <div class="card-modern rounded-xl p-4 text-center">
+              <div class="text-2xl font-extrabold text-primary-600">8</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400" data-ar="مشاريع معروضة" data-en="Featured Projects">مشاريع معروضة</div>
+            </div>
+            <div class="card-modern rounded-xl p-4 text-center">
+              <div class="text-2xl font-extrabold text-primary-600">12</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400" data-ar="خدمة متخصصة" data-en="Specialized Services">خدمة متخصصة</div>
+            </div>
+            <div class="card-modern rounded-xl p-4 text-center">
+              <div class="text-2xl font-extrabold text-primary-600">98%</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400" data-ar="دقة بحث علمي" data-en="Research Accuracy">دقة بحث علمي</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- زر التواصل -->
+        <div class="mt-6 text-center">
+          <a href="#contact" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-medium transition-colors duration-300">
+            <span data-ar="تواصل معي" data-en="Contact Me">تواصل معي</span>
+            <i class="fas fa-arrow-left ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="has-toggle py-16 md:py-20 bg-gray-50 dark:bg-gray-900/50">
+  <div class="container mx-auto px-6">
+    <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="services-content" aria-expanded="false" data-section="services">
+        <div class="flex items-center">
+        <div class="w-10 h-10 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+          <i class="fas fa-cogs text-white"></i>
+        </div>
+        <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="خدماتي" data-en="My Services">
+          خدماتي
+        </h2>
+        </div>
+        <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+    </div>
+
+    <!-- Section Content -->
+    <div id="services-content" class="section-content">
+      <div class="text-center mb-6">
+        <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
+           data-ar="مجموعة من الخدمات التقنية الحديثة تلبي احتياجاتك الأكاديمية والمهنية"
+           data-en="Modern technical services for academic and professional needs">
+          مجموعة من الخدمات التقنية الحديثة تلبي احتياجاتك الأكاديمية والمهنية
+        </p>
+      </div>
+
+      <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- الخدمات الظاهرة أولاً -->
+        <div class="card-modern tilt bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-tools text-3xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="إصلاح مشاكل الحاسب الآلي" data-en="Computer Repair">إصلاح مشاكل الحاسب الآلي</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="صيانة وإصلاح كافة أعطال الحواسيب والبرمجيات." data-en="Maintenance and repair for computer hardware and software issues.">صيانة وإصلاح كافة أعطال الحواسيب والبرمجيات.</p>
+          <button class="details-btn w-full py-2 px-4 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition text-sm font-medium"
+                  data-service="repair" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-book-open text-3xl text-green-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="إعداد الدراسات والبحوث" data-en="Studies and Research">إعداد الدراسات والبحوث</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="كتابة البحوث الأكاديمية والعلمية بمصادر موثوقة." data-en="Academic and scientific research writing with reliable sources.">كتابة البحوث الأكاديمية والعلمية بمصادر موثوقة.</p>
+          <button class="details-btn w-full py-2 px-4 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/50 transition text-sm font-medium"
+                  data-service="research" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-file-alt text-3xl text-yellow-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="إعداد التقارير" data-en="Report Writing">إعداد التقارير</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="تنسيق وإنشاء تقارير احترافية لكافة المجالات." data-en="Professional reports for academic and business use.">تنسيق وإنشاء تقارير احترافية لكافة المجالات.</p>
+          <button class="details-btn w-full py-2 px-4 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-lg hover:bg-yellow-100 dark:hover:bg-yellow-900/50 transition text-sm font-medium"
+                  data-service="reports" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-chart-pie text-3xl text-purple-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="إعداد دراسات الجدوى" data-en="Feasibility Studies">إعداد دراسات الجدوى</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="تحليل مالي وفني لإنجاح مشاريعك التجارية." data-en="Financial and technical analysis to support project success.">تحليل مالي وفني لإنجاح مشاريعك التجارية.</p>
+          <button class="details-btn w-full py-2 px-4 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/50 transition text-sm font-medium"
+                  data-service="feasibility" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-graduation-cap text-3xl text-pink-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="مشاريع التخرج" data-en="Graduation Projects">مشاريع التخرج</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="مساعدة كاملة في تطوير وتنفيذ مشاريع التخرج الجامعية." data-en="End-to-end support for university graduation projects.">مساعدة كاملة في تطوير وتنفيذ مشاريع التخرج الجامعية.</p>
+          <button class="details-btn w-full py-2 px-4 bg-pink-50 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-lg hover:bg-pink-100 dark:hover:bg-pink-900/50 transition text-sm font-medium"
+                  data-service="graduation" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-robot text-3xl text-indigo-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="الذكاء الاصطناعي" data-en="Artificial Intelligence">الذكاء الاصطناعي</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="بناء حلول ذكية باستخدام تقنيات الذكاء الاصطناعي والتعلم الآلي." data-en="Smart solutions using AI and machine learning.">بناء حلول ذكية باستخدام تقنيات الذكاء الاصطناعي والتعلم الآلي.</p>
+          <button class="details-btn w-full py-2 px-4 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition text-sm font-medium"
+                  data-service="ai" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <!-- خدمات مخفية عند التحميل الأولي -->
+        <div class="card-modern tilt hidden-service bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-code text-3xl text-red-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="تطوير المواقع" data-en="Web Development">تطوير المواقع</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="تصميم وبرمجة مواقع إلكترونية احترافية متجاوبة لجميع الأجهزة." data-en="Professional responsive websites for all devices.">تصميم وبرمجة مواقع إلكترونية احترافية متجاوبة لجميع الأجهزة.</p>
+          <button class="details-btn w-full py-2 px-4 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/50 transition text-sm font-medium"
+                  data-service="web" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt hidden-service bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-project-diagram text-3xl text-blue-700 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="برمجة MATLAB" data-en="MATLAB Programming">برمجة MATLAB</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="حلول وتحليلات علمية باستخدام لغة MATLAB للمهام الهندسية والبحثية." data-en="Scientific and engineering solutions using MATLAB.">حلول وتحليلات علمية باستخدام لغة MATLAB للمهام الهندسية والبحثية.</p>
+          <button class="details-btn w-full py-2 px-4 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition text-sm font-medium"
+                  data-service="matlab" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt hidden-service bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-download text-3xl text-green-700 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="تحميل الأنظمة والبرامج" data-en="Systems and Software Setup">تحميل الأنظمة والبرامج</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="توفير وتنصيب الأنظمة المناسبة والبرامج المطلوبة لأداء المهام بكفاءة." data-en="Installing the right operating systems and required software.">توفير وتنصيب الأنظمة المناسبة والبرامج المطلوبة لأداء المهام بكفاءة.</p>
+          <button class="details-btn w-full py-2 px-4 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/50 transition text-sm font-medium"
+                  data-service="software" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt hidden-service bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-sitemap text-3xl text-cyan-700 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="ربط فروع الشركات" data-en="Branch Networking">ربط فروع الشركات</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="ربط فروع المؤسسات عبر الشبكات لتبادل البيانات بأمان وسرعة." data-en="Secure and fast networking between company branches.">ربط فروع المؤسسات عبر الشبكات لتبادل البيانات بأمان وسرعة.</p>
+          <button class="details-btn w-full py-2 px-4 bg-cyan-50 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-lg hover:bg-cyan-100 dark:hover:bg-cyan-900/50 transition text-sm font-medium"
+                  data-service="network" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt hidden-service bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-headset text-3xl text-orange-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="الدعم الفني عن بُعد" data-en="Remote Technical Support">الدعم الفني عن بُعد</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="حل مشاكل البرامج والأجهزة عبر التحكم عن بُعد بطرق آمنة." data-en="Secure remote support for software and hardware issues.">حل مشاكل البرامج والأجهزة عبر التحكم عن بُعد بطرق آمنة.</p>
+          <button class="details-btn w-full py-2 px-4 bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-lg hover:bg-orange-100 dark:hover:bg-orange-900/50 transition text-sm font-medium"
+                  data-service="support" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+
+        <div class="card-modern tilt hidden-service bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-server text-3xl text-teal-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2 dark:text-white" data-ar="تحليل وتصميم الأنظمة" data-en="System Analysis and Design">تحليل وتصميم الأنظمة</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-ar="نقدم تحليلًا دقيقًا لاحتياجات العميل ونحوّلها إلى نماذج احترافية مثل مخططات UML، وتدفقات البيانات، وتصميم قواعد البيانات، بما يضمن تنفيذ مشروع متماسك وسلس." data-en="We analyze requirements and turn them into UML diagrams, data flows, and database designs for a clear project structure.">نقدم تحليلًا دقيقًا لاحتياجات العميل ونحوّلها إلى نماذج احترافية مثل مخططات UML، وتدفقات البيانات، وتصميم قواعد البيانات، بما يضمن تنفيذ مشروع متماسك وسلس.</p>
+          <button class="details-btn w-full py-2 px-4 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-lg hover:bg-teal-100 dark:hover:bg-teal-900/50 transition text-sm font-medium"
+                  data-service="systemDesign" data-ar="عرض التفاصيل" data-en="View details">
+            عرض التفاصيل
+          </button>
+        </div>
+      </div>
+
+      <!-- زر عرض المزيد/إخفاء -->
+      <div class="text-center mt-6">
+        <button id="toggleBtn" type="button" class="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold transition">
+          عرض المزيد
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="has-toggle py-16 md:py-20 bg-gray-50 dark:bg-gray-900/50">
+    <div class="container mx-auto px-6">
+        <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="skills-content" aria-expanded="false" data-section="skills">
+            <div class="flex items-center">
+            <div class="w-10 h-10 gradient-accent rounded-xl flex items-center justify-center ml-3">
+              <i class="fas fa-lightbulb text-white"></i>
+            </div>
+            <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="مهاراتي التقنية" data-en="My Technical Skills">
+              مهاراتي التقنية
+            </h2>
+            </div>
+            <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+        </div>
+
+        <!-- Section Content -->
+        <div id="skills-content" class="section-content">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="مجموعة من المهارات والخبرات التي اكتسبتها خلال سنوات عملي في مجال البرمجة والتطوير"
+                   data-en="A set of skills and expertise I've acquired over years of working in programming and development">
+                   مجموعة من المهارات والخبرات التي اكتسبتها خلال سنوات عملي في مجال البرمجة والتطوير
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Technical Skills Card -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                        <i class="fas fa-cogs text-blue-500 mr-3"></i>
+                        <span data-ar="المهارات التقنية" data-en="Technical Skills">المهارات التقنية</span>
+                    </h3>
+                    <div class="grid grid-cols-2 gap-6 text-center">
+                        <div class="skill-circle" data-percent="95">
+                            <svg class="w-24 h-24 mx-auto">
+                                <circle class="text-gray-200 dark:text-gray-700" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                                <circle class="text-blue-500 progress-ring" stroke-width="8" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                            </svg>
+                            <span class="absolute text-xl font-bold text-gray-800 dark:text-white">95%</span>
+                            <p class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400" data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</p>
+                        </div>
+                        <div class="skill-circle" data-percent="90">
+                            <svg class="w-24 h-24 mx-auto">
+                                <circle class="text-gray-200 dark:text-gray-700" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                                <circle class="text-blue-500 progress-ring" stroke-width="8" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                            </svg>
+                            <span class="absolute text-xl font-bold text-gray-800 dark:text-white">90%</span>
+                            <p class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400" data-ar="الذكاء الاصطناعي" data-en="AI">الذكاء الاصطناعي</p>
+                        </div>
+                        <div class="skill-circle" data-percent="85">
+                            <svg class="w-24 h-24 mx-auto">
+                                <circle class="text-gray-200 dark:text-gray-700" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                                <circle class="text-blue-500 progress-ring" stroke-width="8" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                            </svg>
+                            <span class="absolute text-xl font-bold text-gray-800 dark:text-white">85%</span>
+                            <p class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400" data-ar="قواعد البيانات" data-en="Databases">قواعد البيانات</p>
+                        </div>
+                        <div class="skill-circle" data-percent="80">
+                            <svg class="w-24 h-24 mx-auto">
+                                <circle class="text-gray-200 dark:text-gray-700" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                                <circle class="text-blue-500 progress-ring" stroke-width="8" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="48" cy="48"/>
+                            </svg>
+                            <span class="absolute text-xl font-bold text-gray-800 dark:text-white">80%</span>
+                            <p class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400" data-ar="تطوير التطبيقات" data-en="App Development">تطوير التطبيقات</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages & Tools Card -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+            <i class="fas fa-laptop-code text-green-500 mr-3"></i>
+            <span data-ar="لغات وأدوات" data-en="Languages & Tools">لغات وأدوات</span>
+        </h3>
+        <div class="grid grid-cols-3 sm:grid-cols-4 gap-4 text-center">
+            <div class="skill-icon"><i class="fab fa-python text-4xl text-yellow-500"></i><span class="skill-name">Python</span></div>
+            <div class="skill-icon"><i class="fab fa-js-square text-4xl text-yellow-400"></i><span class="skill-name">JavaScript</span></div>
+            <div class="skill-icon"><i class="fab fa-java text-4xl text-red-500"></i><span class="skill-name">Java</span></div>
+            <div class="skill-icon"><i class="fas fa-hashtag text-4xl text-purple-500"></i><span class="skill-name">C#</span></div>
+            <div class="skill-icon"><i class="fab fa-php text-4xl text-indigo-400"></i><span class="skill-name">PHP</span></div>
+            <div class="skill-icon"><i class="fas fa-square-root-alt text-4xl text-orange-500"></i><span class="skill-name">MATLAB</span></div>
+            <div class="skill-icon"><i class="fab fa-node-js text-4xl text-green-600"></i><span class="skill-name">Node.js</span></div>
+            <div class="skill-icon"><i class="fas fa-database text-4xl text-blue-600"></i><span class="skill-name">MySQL</span></div>
+            <div class="skill-icon"><i class="fas fa-database text-4xl text-red-600"></i><span class="skill-name">Oracle</span></div>
+          
+            <div class="skill-icon"><i class="fab fa-html5 text-4xl text-orange-600"></i><span class="skill-name">HTML</span></div>
+            <div class="skill-icon"><i class="fab fa-css3-alt text-4xl text-blue-500"></i><span class="skill-name">CSS</span></div>
+            <div class="skill-icon"><i class="fas fa-project-diagram text-4xl text-gray-500"></i><span class="skill-name">UML</span></div>
+        </div>
+    </div>
+                <!-- Soft Skills Card -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                        <i class="fas fa-users text-purple-500 mr-3"></i>
+                        <span data-ar="المهارات الشخصية" data-en="Soft Skills">المهارات الشخصية</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="soft-skill"><i class="fas fa-check-circle text-purple-400"></i><span data-ar="العمل الجماعي" data-en="Teamwork">العمل الجماعي</span></div>
+                        <div class="soft-skill"><i class="fas fa-check-circle text-purple-400"></i><span data-ar="التواصل الفعال" data-en="Communication">التواصل الفعال</span></div>
+                        <div class="soft-skill"><i class="fas fa-check-circle text-purple-400"></i><span data-ar="حل المشكلات" data-en="Problem Solving">حل المشكلات</span></div>
+                        <div class="soft-skill"><i class="fas fa-check-circle text-purple-400"></i><span data-ar="إدارة الوقت" data-en="Time Management">إدارة الوقت</span></div>
+                        <div class="soft-skill"><i class="fas fa-check-circle text-purple-400"></i><span data-ar="التفكير الإبداعي" data-en="Creativity">التفكير الإبداعي</span></div>
+                        <div class="soft-skill"><i class="fas fa-check-circle text-purple-400"></i><span data-ar="القيادة" data-en="Leadership">القيادة</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Projects Section -->
+<section id="projects" class="has-toggle py-16 md:py-20 bg-gray-50 dark:bg-gray-900/50">
+    <div class="container mx-auto px-6">
+        <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="projects-content" aria-expanded="false" data-section="projects">
+            <div class="flex items-center">
+            <div class="w-10 h-10 gradient-success rounded-xl flex items-center justify-center ml-3">
+              <i class="fas fa-project-diagram text-white"></i>
+            </div>
+            <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="معرض المشاريع" data-en="Projects Gallery">
+              معرض المشاريع
+            </h2>
+            </div>
+            <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+        </div>
+
+        <!-- Section Content -->
+        <div id="projects-content" class="section-content">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="نماذج من أبرز المشاريع التقنية التي تم تطويرها بأحدث التقنيات وأعلى معايير الجودة"
+                   data-en="Samples of top technical projects developed with latest technologies and highest quality standards">
+                   نماذج من أبرز المشاريع التقنية التي تم تطويرها بأحدث التقنيات وأعلى معايير الجودة
+                </p>
+            </div>
+            
+            <!-- Projects Filter -->
+            <div class="flex justify-center mb-8 overflow-x-auto">
+                <div class="inline-flex rounded-lg p-1 bg-gray-100 dark:bg-gray-800 gap-1">
+                    <button type="button" class="filter-btn px-4 py-2 text-sm font-medium rounded-md bg-white dark:bg-gray-700 text-primary-600 dark:text-primary-400 shadow-sm" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+                    <button type="button" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700" data-filter="web" data-ar="الويب" data-en="Web">الويب</button>
+                    <button type="button" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700" data-filter="ai" data-ar="الذكاء الاصطناعي" data-en="AI">الذكاء الاصطناعي</button>
+                    <button type="button" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-700" data-filter="mobile" data-ar="التطبيقات" data-en="Apps">التطبيقات</button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Project 1 - Library System -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.2s]" data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="Library.jpg" 
+                             alt="نظام إدارة المكتبة الإلكتروني" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="book">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-book text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="إدارة" data-en="Admin">إدارة</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="نظام إدارة المكتبة الإلكتروني" data-en="Electronic Library Management System">
+                            نظام إدارة المكتبة الإلكتروني
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="نظام شامل لإدارة المكتبات الرقمية مع فهرسة الكتب ونظام الإعارة المتقدم"
+                           data-en="Comprehensive digital library management system with book cataloging and advanced lending system">
+                           نظام شامل لإدارة المكتبات الرقمية مع فهرسة الكتب ونظام الإعارة المتقدم
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">PHP</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">MySQL</span>
+                            </div>
+                            <button type="button" data-project="library" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Brain Tumor AI -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.3s]" data-category="ai">
+                    <div class="relative overflow-hidden">
+                        <img src="BrainTumor.jpeg" 
+                             alt="النظام الآلي لكشف وتصنيف أورام الدماغ" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="brain">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-brain text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-300 px-3 py-1 rounded-full text-xs font-medium">AI</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="النظام الآلي لكشف وتصنيف أورام الدماغ" data-en="Automatic Brain Tumor Detection System">
+                        النظام الآلي لكشف وتصنيف أورام الدماغ
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="مشروع متطور لتشخيص وتصنيف أورام الدماغ باستخدام خوارزميات التعلم العميق"
+                           data-en="Advanced project for diagnosing and classifying brain tumors using deep learning algorithms">
+                           مشروع متطور لتشخيص وتصنيف أورام الدماغ باستخدام خوارزميات التعلم العميق
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Python</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">TensorFlow</span>
+                            </div>
+                            <button type="button" data-project="brain" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Java Chat System -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.4s]" data-category="mobile">
+                    <div class="relative overflow-hidden">
+                        <img src="chat-app.jpg" 
+                             alt="نظام شات متقدم بلغة جافا" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="comments">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-success rounded-xl flex items-center justify-center ml-3">
+                                <i class="fab fa-java text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="تطبيق" data-en="App">تطبيق</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="نظام شات متقدم بلغة جافا" data-en="Advanced Java Chat System">
+                            نظام شات متقدم بلغة جافا
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="تطبيق تراسل فوري يدعم النصوص والملفات المتعددة مع تشفير متقدم للرسائل"
+                           data-en="Instant messaging app supporting text and multimedia files with advanced message encryption">
+                           تطبيق تراسل فوري يدعم النصوص والملفات المتعددة مع تشفير متقدم للرسائل
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Java</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Socket</span>
+                            </div>
+                            <button type="button" data-project="chat" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - School Management -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.5s]" data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="SchoolManagement.jpg"
+                             alt="نظام إدارة الطلاب للمدارس" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="school">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-accent rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-school text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="تعليم" data-en="Education">تعليم</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="نظام إدارة الطلاب للمدارس" data-en="School Student Management System">
+                            نظام إدارة الطلاب للمدارس
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="منصة متكاملة لإدارة معلومات الطلاب والدرجات مع نظام تقارير تفصيلية"
+                           data-en="Integrated platform for managing student information and grades with detailed reporting system">
+                           منصة متكاملة لإدارة معلومات الطلاب والدرجات مع نظام تقارير تفصيلية
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">C#</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">.NET</span>
+                            </div>
+                            <button type="button" data-project="school" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Eye Biometric -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.6s]" data-category="ai">
+                    <div class="relative overflow-hidden">
+                        <img src="Advanced%20Eye.png" 
+                             alt="نظام بصمة العين المتقدم" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="eye">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-eye text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="أمان" data-en="Security">أمان</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="نظام بصمة العين المتقدم" data-en="Advanced Eye Biometric System">
+                            نظام بصمة العين المتقدم
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="نظام أمان متطور للمصادقة باستخدام بصمة العين مع دقة عالية في التحقق"
+                           data-en="Advanced security system for eye biometric authentication with high verification accuracy">
+                           نظام أمان متطور للمصادقة باستخدام بصمة العين مع دقة عالية في التحقق
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">MATLAB</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">Python</span>
+                            </div>
+                            <button type="button" data-project="eye" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Medical Records -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.7s]" data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="medical-records.jpg" 
+                             alt="نظام إدارة السجلات الطبية" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="notes-medical">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-file-medical text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="طبي" data-en="Medical">طبي</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="نظام إدارة السجلات الطبية" data-en="Medical Records Management System">
+                            نظام إدارة السجلات الطبية
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="منصة إلكترونية شاملة لإدارة السجلات الصحية مع نظام مواعيد متقدم"
+                           data-en="Comprehensive electronic platform for health records management with advanced appointment system">
+                           منصة إلكترونية شاملة لإدارة السجلات الصحية مع نظام مواعيد متقدم
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">PHP</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">HTML</span>
+                            </div>
+                            <button type="button" data-project="medical" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 - Patient Management System -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.8s]" data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="Patient%20Management%20System.jpg" 
+                             alt="نظام إدارة المرضى" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="user-md">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-user-md text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="طبي" data-en="Medical">طبي</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="نظام إدارة المرضى" data-en="Patient Management System">
+                            نظام إدارة المرضى
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="نظام متكامل لإدارة بيانات المرضى والمواعيد مع واجهة سهلة الاستخدام"
+                           data-en="Integrated system for managing patient data and appointments with user-friendly interface">
+                           نظام متكامل لإدارة بيانات المرضى والمواعيد مع واجهة سهلة الاستخدام
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">PHP</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">JavaScript</span>
+                            </div>
+                            <button type="button" data-project="patient" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 - Electronic Health Record -->
+                <div class="project-card card-modern rounded-2xl overflow-hidden opacity-0 animate-slide-up [animation-delay:0.9s]" data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="ElectronicHealthRecord.jpg" 
+                             alt="السجل الصحي الإلكتروني" 
+                             class="w-full h-48 md:h-56 object-cover object-top transition-transform duration-300 hover:scale-110"
+                             loading="lazy"
+                             data-fallback="file-medical">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-start">
+                            <span aria-hidden="true" class="p-4 text-white hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt text-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 md:w-12 md:h-12 gradient-success rounded-xl flex items-center justify-center ml-3">
+                                <i class="fas fa-file-medical-alt text-white text-base md:text-lg"></i>
+                            </div>
+                            <span class="bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 px-3 py-1 rounded-full text-xs font-medium" data-ar="صحي" data-en="Health">صحي</span>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-800 dark:text-white" 
+                            data-ar="السجل الصحي الإلكتروني" data-en="Electronic Health Record">
+                            السجل الصحي الإلكتروني
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4" 
+                           data-ar="نظام رقمي متطور لتخزين وإدارة المعلومات الصحية مع تبادل آمن للبيانات الطبية"
+                           data-en="Advanced digital system for storing and managing health information with secure medical data exchange">
+                           نظام رقمي متطور لتخزين وإدارة المعلومات الصحية مع تبادل آمن للبيانات الطبية
+                        </p>
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">PHP</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-lg">MySQL</span>
+                            </div>
+                            <button type="button" data-project="ehr" class="project-details-btn text-primary-600 hover:text-primary-700 transition-colors font-medium text-sm">
+                                <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                                <i class="fas fa-arrow-left mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl font-medium text-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300">
+                    <span data-ar="اطلب مشروعك الآن" data-en="Start Your Project">اطلب مشروعك الآن</span>
+                    <i class="fas fa-arrow-left ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="has-toggle py-16 md:py-20 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="testimonials-content" aria-expanded="false" data-section="testimonials">
+            <div class="flex items-center">
+            <div class="w-10 h-10 bg-yellow-500 rounded-xl flex items-center justify-center ml-3">
+              <i class="fas fa-star text-white"></i>
+            </div>
+            <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="تقييمات العملاء على جوجل" data-en="Google Reviews">
+              تقييمات العملاء على جوجل
+            </h2>
+            </div>
+            <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+        </div>
+
+        <!-- Section Content -->
+        <div id="testimonials-content" class="section-content">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="آراء حقيقية من عملاء بكر الحلول الرقمية على خرائط جوجل"
+                   data-en="Real Google Maps reviews from clients of Bakr Digital Solutions">
+                   آراء حقيقية من عملاء بكر الحلول الرقمية على خرائط جوجل
+                </p>
+            </div>
+            
+            <!-- Google Reviews Embed -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="card-modern rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 dark:text-white">أحمد علي</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 italic"
+                       data-ar="تعامل احترافي وساعدوني في إنجاز مشروع التخرج بدقة، أنصح بالتعامل مع بكر الحلول الرقمية"
+                       data-en="Professional support that helped me finish my graduation project accurately. I recommend Bakr Digital Solutions.">
+                        "تعامل احترافي وساعدوني في إنجاز مشروع التخرج بدقة، أنصح بالتعامل مع بكر الحلول الرقمية"
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                        <i class="fab fa-google mr-2"></i> Google Review
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="card-modern rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 dark:text-white">سارة محمد</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 italic"
+                       data-ar="خدمات مميزة ودعم فني رائع، ساعدوني في حل مشكلة معقدة في مشروع الذكاء الاصطناعي الخاص بي"
+                       data-en="Excellent service and technical support. They helped me solve a complex issue in my AI project.">
+                        "خدمات مميزة ودعم فني رائع، ساعدوني في حل مشكلة معقدة في مشروع الذكاء الاصطناعي الخاص بي"
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                        <i class="fab fa-google mr-2"></i> Google Review
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="card-modern rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 dark:text-white">خالد عبدالله</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 italic"
+                       data-ar="خدمة جدية واحترافية، والالتزام بالمواعيد ممتاز. أنصح بالتعامل مع بكر الحلول الرقمية"
+                       data-en="Serious and professional service, with excellent commitment to deadlines. I recommend Bakr Digital Solutions.">
+                        "خدمة جدية واحترافية، والالتزام بالمواعيد ممتاز. أنصح بالتعامل مع بكر الحلول الرقمية"
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                        <i class="fab fa-google mr-2"></i> Google Review
+                    </div>
+                </div>
+            </div>
+            <!-- زر عرض جميع التقييمات -->
+    <div class="text-center mt-12">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x161c6faa7da77da5:0xf18e0002d9271a22!12e1?source=g.page.m._&laa=merchant-review-solicitation"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-colors duration-300">
+            <i class="fab fa-google mr-2"></i>
+            <span data-ar="عرض التقييمات على جوجل" data-en="View Google Reviews">عرض التقييمات على جوجل</span>
+        </a>
+        <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x161c6faa7da77da5:0xf18e0002d9271a22!12e1?source=g.page.m._&laa=merchant-review-solicitation"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-white rounded-xl font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300">
+            <i class="fas fa-star text-yellow-400 mr-2"></i>
+            <span data-ar="أضف تقييمك" data-en="Write a review">أضف تقييمك</span>
+        </a>
+        </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="has-toggle py-16 md:py-20">
+    <div class="container mx-auto px-6">
+        <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="contact-content" aria-expanded="false" data-section="contact">
+            <div class="flex items-center">
+            <div class="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center ml-3">
+              <i class="fas fa-envelope text-white"></i>
+            </div>
+            <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="تواصل معي" data-en="Contact Me">
+              تواصل معي
+            </h2>
+            </div>
+            <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+        </div>
+
+        <!-- Section Content -->
+        <div id="contact-content" class="section-content">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="جاهز لبدء مشروعك القادم؟ تواصل معي الآن ودعنا نحول أفكارك إلى واقع"
+                   data-en="Ready to start your next project? Contact me now and let's turn your ideas into reality">
+                   جاهز لبدء مشروعك القادم؟ تواصل معي الآن ودعنا نحول أفكارك إلى واقع
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                        <!-- Contact Methods -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8 mb-10 md:mb-12">
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+967735962962" target="_blank" rel="noopener noreferrer"
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-green-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.2s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gradient-success rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-whatsapp text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">WhatsApp</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="تواصل فوري ومباشر" data-en="Instant and direct communication">تواصل فوري ومباشر</p>
+                   
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/EngAbobakrH" target="_blank" rel="noopener noreferrer"
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-blue-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.3s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-telegram text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">Telegram</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="مراسلة آمنة ومشاركة ملفات" data-en="Secure messaging and file sharing">مراسلة آمنة ومشاركة ملفات</p>
+                   
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:engabobakrh@gmail.com" 
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-red-500 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.4s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gradient-secondary rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-envelope text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="للاستفسارات التفصيلية" data-en="For detailed inquiries">للاستفسارات التفصيلية</p>
+                    
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.linkedin.com/in/abobakr-hassan-eng" target="_blank" rel="noopener noreferrer"
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-sky-600 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.5s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#0A66C2] rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-linkedin-in text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">LinkedIn</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="الملف المهني والتواصل الوظيفي" data-en="Professional profile and career networking">الملف المهني والتواصل الوظيفي</p>
+                </a>
+
+                <a href="https://www.facebook.com/share/19efGfNsRi/" target="_blank" rel="noopener noreferrer"
+                    class="group card-modern p-6 md:p-8 rounded-2xl text-center border-2 border-transparent hover:border-blue-700 hover:shadow-lg transition-all duration-300 opacity-0 animate-slide-up [animation-delay:0.6s]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#1877F2] rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fab fa-facebook-f text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800 dark:text-white">Facebook</h3>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3" data-ar="مشاركة وبناء علاقات احترافية" data-en="Share and connect professionally">مشاركة وبناء علاقات احترافية</p>
+                  
+                </a>
+
+    </div>
+
+                
+                <!-- Contact Form -->
+                <div class="card-modern rounded-2xl p-6 md:p-8 opacity-0 animate-slide-up [animation-delay:0.5s]">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center" 
+                        data-ar="أرسل لي رسالة" data-en="Send Me a Message">أرسل لي رسالة</h3>
+                    
+                    <form id="contactForm" class="space-y-4">
+                        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-base"
+                                       placeholder="أدخل اسمك الكامل" data-ar="أدخل اسمك الكامل" data-en="Enter your full name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-base"
+                                       placeholder="أدخل بريدك الإلكتروني" data-ar="أدخل بريدك الإلكتروني" data-en="Enter your email">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="الموضوع" data-en="Subject">الموضوع</label>
+                            <input type="text" id="subject" name="subject" autocomplete="off" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-base"
+                                   placeholder="أدخل موضوع الرسالة" data-ar="أدخل موضوع الرسالة" data-en="Enter the message subject">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-base"
+                                      placeholder="أدخل رسالتك هنا..." data-ar="أدخل رسالتك هنا..." data-en="Enter your message here..."></textarea>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button type="submit" id="contactSubmit"
+                                    class="w-full gradient-primary text-white px-6 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center text-base md:text-lg">
+                                <i class="fas fa-paper-plane ml-2"></i>
+                                <span data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Availability -->
+                <div class="text-center mt-10 opacity-0 animate-slide-up [animation-delay:0.6s]">
+                    <div class="glass-effect p-6 md:p-8 rounded-2xl">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse ml-3"></div>
+                            <span class="text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                  data-ar="متاح للعمل على مشاريع جديدة" data-en="Available for New Projects">
+                                  متاح للعمل على مشاريع جديدة
+                            </span>
+                        </div>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400" 
+                           data-ar="أتطلع لسماع قصتك ومساعدتك في تحقيق أهدافك التقنية"
+                           data-en="I look forward to hearing your story and helping you achieve your technical goals">
+                           أتطلع لسماع قصتك ومساعدتك في تحقيق أهدافك التقنية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="has-toggle py-16 md:py-20 bg-gray-50 dark:bg-gray-900/50">
+    <div class="container mx-auto px-6">
+        <div class="section-header flex items-center justify-between" role="button" tabindex="0" aria-controls="faq-content" aria-expanded="false" data-section="faq">
+            <div class="flex items-center">
+            <div class="w-10 h-10 gradient-secondary rounded-xl flex items-center justify-center ml-3">
+              <i class="fas fa-question-circle text-white"></i>
+            </div>
+            <h2 class="section-title text-2xl md:text-3xl font-bold" data-ar="أسئلة شائعة" data-en="Frequently Asked Questions">
+              أسئلة شائعة
+            </h2>
+            </div>
+            <i class="fas fa-chevron-down section-toggle text-lg" aria-hidden="true"></i>
+        </div>
+
+        <!-- Section Content -->
+        <div id="faq-content" class="section-content">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" 
+                   data-ar="إجابات على بعض الأسئلة الأكثر شيوعًا التي تلقيتها من العملاء"
+                   data-en="Answers to some of the most common questions I've received from clients">
+                   إجابات على بعض الأسئلة الأكثر شيوعًا التي تلقيتها من العملاء
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.2s]">
+                        <button type="button" class="faq-toggle flex justify-between items-center w-full text-right">
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white" 
+                                data-ar="كم تستغرق مدة إنجاز المشروع؟" 
+                                data-en="How long does it take to complete a project?">
+                                كم تستغرق مدة إنجاز المشروع؟
+                            </h3>
+                            <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400" 
+                               data-ar="تختلف مدة الإنجاز حسب نوع المشروع وتعقيده. عادةً ما تستغرق مشاريع التخرج من 2-4 أسابيع، بينما قد تستغرق المشاريع التجارية الكبيرة عدة أشهر. يمكنني تقديم تقدير زمني دقيق بعد مناقشة متطلبات المشروع بالتفصيل."
+                               data-en="The completion time varies depending on the type and complexity of the project. Graduation projects usually take 2-4 weeks, while large commercial projects may take several months. I can provide an accurate time estimate after discussing the project requirements in detail.">
+                               تختلف مدة الإنجاز حسب نوع المشروع وتعقيده. عادةً ما تستغرق مشاريع التخرج من 2-4 أسابيع، بينما قد تستغرق المشاريع التجارية الكبيرة عدة أشهر. يمكنني تقديم تقدير زمني دقيق بعد مناقشة متطلبات المشروع بالتفصيل.
+                            </p>
+                        </div>
+                    </div>
+                    
+<div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.4s]">
+  <button type="button" class="faq-toggle flex justify-between items-center w-full text-right">
+    <h3 class="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white"
+        data-ar="كيف يتم تحديد سعر المشروع؟"
+        data-en="How is the project price determined?">
+      كيف يتم تحديد سعر المشروع؟
+    </h3>
+    <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+  </button>
+  <div class="faq-content mt-4 hidden">
+    <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+       data-ar="يُحدد السعر حسب نطاق العمل، والتقنيات المستخدمة، ومدة التنفيذ، ومستوى التخصيص. أقدّم عرض سعر واضح بعد مراجعة المتطلبات، بدون رسوم مخفية."
+       data-en="Pricing depends on scope, technologies, timeline, and customization. I provide a clear quote after reviewing the requirements, with no hidden fees.">
+      يُحدد السعر حسب نطاق العمل، والتقنيات المستخدمة، ومدة التنفيذ، ومستوى التخصيص. أقدّم عرض سعر واضح بعد مراجعة المتطلبات، بدون رسوم مخفية.
+    </p>
+  </div>
+</div>
+
+<div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.5s]">
+  <button type="button" class="faq-toggle flex justify-between items-center w-full text-right">
+    <h3 class="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white"
+        data-ar="هل يمكنني طلب تعديل بعد تسليم المشروع؟"
+        data-en="Can I request modifications after delivery?">
+      هل يمكنني طلب تعديل بعد تسليم المشروع؟
+    </h3>
+    <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+  </button>
+  <div class="faq-content mt-4 hidden">
+    <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+       data-ar="نعم، يتم تقديم فترة دعم فني مجانية بعد التسليم تشمل التعديلات البسيطة. التعديلات الكبيرة أو الإضافات الجديدة قد تخضع لرسوم إضافية يتم الاتفاق عليها مسبقاً."
+       data-en="Yes, a free support period is provided after delivery for minor modifications. Major changes or new features may incur additional charges agreed in advance.">
+      نعم، يتم تقديم فترة دعم فني مجانية بعد التسليم تشمل التعديلات البسيطة. التعديلات الكبيرة أو الإضافات الجديدة قد تخضع لرسوم إضافية يتم الاتفاق عليها مسبقاً.
+    </p>
+  </div>
+</div>
+
+<div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.6s]">
+  <button type="button" class="faq-toggle flex justify-between items-center w-full text-right">
+    <h3 class="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white"
+        data-ar="هل يمكن تنفيذ المشروع باستخدام تقنيات محددة؟"
+        data-en="Can the project be built with specific technologies?">
+      هل يمكن تنفيذ المشروع باستخدام تقنيات محددة؟
+    </h3>
+    <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+  </button>
+  <div class="faq-content mt-4 hidden">
+    <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+       data-ar="بالطبع. يمكن العمل بتقنيات يحددها العميل مثل PHP أو Python أو JavaScript أو C# أو MATLAB، مع الالتزام بمتطلبات الجامعة أو المؤسسة عند الحاجة."
+       data-en="Absolutely. I can work with client-specified technologies such as PHP, Python, JavaScript, C#, or MATLAB, including academic or institutional requirements.">
+      بالطبع. يمكن العمل بتقنيات يحددها العميل مثل PHP أو Python أو JavaScript أو C# أو MATLAB، مع الالتزام بمتطلبات الجامعة أو المؤسسة عند الحاجة.
+    </p>
+  </div>
+</div>
+
+<div class="card-modern rounded-2xl p-6 opacity-0 animate-slide-up [animation-delay:0.7s]">
+  <button type="button" class="faq-toggle flex justify-between items-center w-full text-right">
+    <h3 class="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white"
+        data-ar="هل تشمل الخدمات دعم ما بعد التنفيذ؟"
+        data-en="Do the services include post-delivery support?">
+      هل تشمل الخدمات دعم ما بعد التنفيذ؟
+    </h3>
+    <i class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+  </button>
+  <div class="faq-content mt-4 hidden">
+    <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+       data-ar="نعم، أقدم فترة دعم فني بعد التسليم لتصحيح أي أخطاء محتملة وضمان التشغيل السليم، مع إمكانية تمديد الدعم حسب الاتفاق."
+       data-en="Yes, I provide post-delivery technical support to fix potential issues and ensure smooth operation, with optional extended support.">
+      نعم، أقدم فترة دعم فني بعد التسليم لتصحيح أي أخطاء محتملة وضمان التشغيل السليم، مع إمكانية تمديد الدعم حسب الاتفاق.
+    </p>
+  </div>
+</div>
+
+                    
+                    <!-- More FAQ items... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal للتفاصيل -->
+<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-lg mx-auto max-h-[90vh] overflow-y-auto">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h3 id="modalTitle" class="text-xl font-bold dark:text-white"></h3>
+      <button id="closeModal" type="button" aria-label="إغلاق التفاصيل" data-ar-label="إغلاق التفاصيل" data-en-label="Close details" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-2xl">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="p-6">
+      <div class="flex items-center mb-4">
+        <i id="modalIcon" class="text-4xl ml-4"></i>
+        <div>
+          <h4 id="modalSubtitle" class="font-semibold text-lg dark:text-white"></h4>
+          <p id="modalBrief" class="text-gray-600 dark:text-gray-400 text-sm"></p>
+        </div>
+      </div>
+
+      <div id="modalDescription" class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed"></div>
+
+      <div class="space-y-4">
+        <h5 class="font-semibold text-gray-900 dark:text-white" data-ar="المميزات الرئيسية:" data-en="Key features:">المميزات الرئيسية:</h5>
+        <div id="modalFeatures" class="grid gap-3"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="p-6 border-t border-gray-200 dark:border-gray-700">
+      <a href="https://wa.me/967735962962" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition" data-ar="طلب الخدمة الآن" data-en="Request this service">
+        طلب الخدمة الآن
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 md:py-12">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+      <!-- التعريف -->
+      <div class="md:col-span-2">
+        <div class="flex items-center mb-4">
+          <div class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-xl flex items-center justify-center ml-3">
+            <i class="fas fa-code text-white text-lg"></i>
+          </div>
+          <div>
+            <div class="text-lg md:text-xl font-bold" data-ar="أبوبكر حسان" data-en="Abobakr Hassan">أبوبكر حسان</div>
+            <div class="text-gray-400 text-sm" data-ar="مهندس برمجيات" data-en="Software Engineer">مهندس برمجيات</div>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed"
+           data-ar="مهندس برمجيات متخصص في تطوير الحلول التقنية المبتكرة والذكاء الاصطناعي مع شغف لتحويل الأفكار إلى واقع"
+           data-en="Software engineer specialized in developing innovative technical solutions and AI with passion for turning ideas into reality">
+           مهندس برمجيات متخصص في تطوير الحلول التقنية المبتكرة والذكاء الاصطناعي مع شغف لتحويل الأفكار إلى واقع
+        </p>
+      </div>
+
+      <!-- روابط سريعة -->
+      <div>
+        <h3 class="text-base md:text-lg font-bold mb-4" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#home" class="hover:text-white transition-colors hover:underline" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors hover:underline" data-ar="نبذة" data-en="About">نبذة</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors hover:underline" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+          <li><a href="#projects" class="hover:text-white transition-colors hover:underline" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors hover:underline" data-ar="التواصل" data-en="Contact">التواصل</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors hover:underline" data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors hover:underline" data-ar="بكر الحلول الرقمية" data-en="Bakr Digital Solutions">بكر الحلول الرقمية</a></li>
+        </ul>
+      </div>
+
+      <!-- تابعني على -->
+      <div>
+        <h3 class="text-base md:text-lg font-bold mb-4" data-ar="تابعني على" data-en="Follow Me">تابعني على</h3>
+        <div class="flex flex-row-reverse gap-3 md:gap-4">
+          <a href="https://t.me/EngAbobakrH" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 md:w-12 md:h-12 gradient-primary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://wa.me/+967735962962" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 md:w-12 md:h-12 gradient-success rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:engabobakrh@gmail.com"
+             class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/abobakr-hassan-eng" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 md:w-12 md:h-12 gradient-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 text-lg">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- حقوق النشر -->
+    <div class="border-t border-gray-800 pt-6 md:pt-8 text-center text-sm">
+      <p class="text-gray-400"
+         data-ar="© 2026 م. أبوبكر حسان - جميع الحقوق محفوظة"
+         data-en="© 2026 Eng. Abobakr Hassan - All rights reserved">
+         © 2026 م. أبوبكر حسان - جميع الحقوق محفوظة
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Back to Top Button -->
+    <a href="https://wa.me/967735962962" class="whatsapp-float no-print" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب" data-ar-label="تواصل عبر واتساب" data-en-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <button id="backToTop" type="button" aria-label="العودة إلى أعلى الصفحة" data-ar-label="العودة إلى أعلى الصفحة" data-en-label="Back to top" class="fixed bottom-8 right-8 w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 opacity-0 invisible no-print">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Initialize variables
+        let isArabic = true;
+        let isExpanded = false;
+        
+        // Service Details Data
+        const serviceDetails = {
+            repair: {
+                title: "إصلاح مشاكل الحاسب الآلي",
+                subtitle: "صيانة شاملة للحواسيب والبرمجيات",
+                icon: "fas fa-tools text-blue-600",
+                brief: "حلول تقنية متخصصة لجميع أعطال الحاسوب",
+                description: "نقدم خدمات صيانة وإصلاح شاملة لجميع أنواع أعطال الحواسيب، من المشاكل البرمجية البسيطة إلى الأعطال المعقدة في النظام. نضمن استعادة جهازك لأفضل أداء ممكن.",
+                features: [
+                    "تشخيص دقيق للأعطال",
+                    "إصلاح مشاكل النظام والبرامج",
+                    "تنظيف وصيانة الأجهزة",
+                    "استعادة البيانات المفقودة",
+                    "تحديث التعريفات والبرامج",
+                    "حماية من الفيروسات"
+                ]
+            },
+            research: {
+                title: "إعداد الدراسات والبحوث",
+                subtitle: "بحوث أكاديمية وعلمية احترافية",
+                icon: "fas fa-book-open text-green-600",
+                brief: "كتابة البحوث العلمية بأعلى معايير الجودة",
+                description: "نختص في إعداد البحوث الأكاديمية والعلمية وفقاً لأحدث المعايير العالمية. نضمن الأصالة والدقة العلمية مع توثيق شامل للمراجع والمصادر الموثوقة.",
+                features: [
+                    "بحث شامل في المصادر العلمية",
+                    "كتابة أكاديمية احترافية",
+                    "توثيق دقيق للمراجع",
+                    "مراجعة لغوية وعلمية",
+                    "تنسيق وفق المعايير المطلوبة",
+                    "ضمان الأصالة والجودة"
+                ]
+            },
+            reports: {
+                title: "إعداد التقارير",
+                subtitle: "تقارير احترافية لجميع المجالات",
+                icon: "fas fa-file-alt text-yellow-600",
+                brief: "تقارير مفصلة وتحليلية بتصميم احترافي",
+                description: "نقدم خدمات إعداد التقارير الاحترافية لمختلف المجالات التجارية والأكاديمية. نركز على الوضوح والدقة في العرض مع استخدام الرسوم البيانية والجداول التوضيحية.",
+                features: [
+                    "تحليل شامل للبيانات",
+                    "رسوم بيانية توضيحية",
+                    "تصميم احترافي ومنسق",
+                    "ملخص تنفيذي واضح",
+                    "توصيات عملية قابلة للتطبيق",
+                    "مراجعة ودقة في المحتوى"
+                ]
+            },
+            feasibility: {
+                title: "إعداد دراسات الجدوى",
+                subtitle: "تحليل مالي وفني متخصص",
+                icon: "fas fa-chart-pie text-purple-600",
+                brief: "دراسات شاملة لضمان نجاح مشاريعك",
+                description: "نوفر دراسات جدوى اقتصادية وفنية شاملة تساعدك في اتخاذ قرارات استثمارية مدروسة. نحلل جميع جوانب المشروع من الناحية المالية والتسويقية والتشغيلية.",
+                features: [
+                    "تحليل السوق والمنافسة",
+                    "دراسة مالية مفصلة",
+                    "تقييم المخاطر والفرص",
+                    "خطة تشغيلية متكاملة",
+                    "توقعات مالية واقعية",
+                    "استراتيجيات التسويق"
+                ]
+            },
+            graduation: {
+                title: "مشاريع التخرج",
+                subtitle: "مساعدة شاملة في مشاريع التخرج",
+                icon: "fas fa-graduation-cap text-pink-600",
+                brief: "دعم متكامل لإنجاز مشروع تخرجك بتميز",
+                description: "نقدم مساعدة شاملة في جميع مراحل مشروع التخرج، من اختيار الفكرة وحتى العرض النهائي. نضمن مشروعاً متميزاً يحقق أهدافك الأكاديمية.",
+                features: [
+                    "اختيار وتطوير فكرة المشروع",
+                    "البحث العلمي والمراجع",
+                    "التصميم والتطوير",
+                    "كتابة التقرير النهائي",
+                    "إعداد العرض التقديمي",
+                    "المتابعة حتى المناقشة"
+                ]
+            },
+            ai: {
+                title: "الذكاء الاصطناعي",
+                subtitle: "حلول ذكية متطورة",
+                icon: "fas fa-robot text-indigo-600",
+                brief: "تطبيقات متقدمة للذكاء الاصطناعي",
+                description: "نطور حلول ذكية باستخدام أحدث تقنيات الذكاء الاصطناعي والتعلم الآلي. نساعدك في أتمتة العمليات وتحليل البيانات بطرق مبتكرة.",
+                features: [
+                    "تطوير نماذج التعلم الآلي",
+                    "معالجة اللغة الطبيعية",
+                    "تحليل البيانات الذكي",
+                    "أنظمة التوصية",
+                    "الرؤية الحاسوبية",
+                    "الأتمتة الذكية"
+                ]
+            },
+            web: {
+                title: "تطوير المواقع",
+                subtitle: "مواقع احترافية متجاوبة",
+                icon: "fas fa-code text-red-600",
+                brief: "تصميم وبرمجة مواقع عصرية",
+                description: "نطور مواقع إلكترونية احترافية متجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات. نضمن سرعة الأداء وتجربة مستخدم متميزة.",
+                features: [
+                    "تصميم متجاوب لجميع الأجهزة",
+                    "واجهات مستخدم عصرية",
+                    "برمجة بأحدث التقنيات",
+                    "تحسين محركات البحث SEO",
+                    "أمان وحماية متقدمة",
+                    "لوحة تحكم سهلة الاستخدام"
+                ]
+            },
+            matlab: {
+                title: "برمجة MATLAB",
+                subtitle: "حلول علمية وهندسية متقدمة",
+                icon: "fas fa-project-diagram text-blue-700",
+                brief: "تحليلات وحلول رياضية متخصصة",
+                description: "نقدم حلول برمجية متخصصة باستخدام MATLAB للمهام الهندسية والبحثية. نساعد في تحليل البيانات والمحاكاة الرياضية والنمذجة العلمية.",
+                features: [
+                    "تحليل وعرض البيانات",
+                    "المحاكاة الرياضية",
+                    "معالجة الإشارات",
+                    "النمذجة الهندسية",
+                    "الحوسبة العلمية",
+                    "أتمتة العمليات الحسابية"
+                ]
+            },
+            software: {
+                title: "تحميل الأنظمة والبرامج",
+                subtitle: "توفير وتنصيب البرمجيات",
+                icon: "fas fa-download text-green-700",
+                brief: "برامج أصلية ومرخصة للاستخدام",
+                description: "نوفر ونثبت الأنظمة والبرامج المناسبة لاحتياجاتك مع ضمان الترخيص والأمان. نختار أفضل البرمجيات المناسبة لطبيعة عملك.",
+                features: [
+                    "أنظمة تشغيل محدثة",
+                    "برامج مكتبية احترافية",
+                    "أدوات التصميم والجرافيك",
+                    "برامج المحاسبة والإدارة",
+                    "أدوات التطوير والبرمجة",
+                    "برامج الحماية والأمان"
+                ]
+            },
+            network: {
+                title: "ربط فروع الشركات",
+                subtitle: "شبكات آمنة وموثوقة",
+                icon: "fas fa-sitemap text-cyan-700",
+                brief: "حلول شبكية متطورة للمؤسسات",
+                description: "نصمم وننفذ حلول ربط الشبكات بين فروع الشركات لضمان تبادل آمن وسريع للبيانات. نستخدم أحدث تقنيات الشبكات والأمان.",
+                features: [
+                    "تصميم البنية الشبكية",
+                    "أنظمة أمان متقدمة",
+                    "ربط المواقع البعيدة",
+                    "مراقبة الشبكة المستمرة",
+                    "نسخ احتياطي للبيانات",
+                    "دعم فني متخصص"
+                ]
+            },
+            support: {
+                title: "الدعم الفني عن بُعد",
+                subtitle: "حلول سريعة وآمنة عن بُعد",
+                icon: "fas fa-headset text-orange-600",
+                brief: "مساعدة تقنية فورية أينما كنت",
+                description: "نقدم خدمات الدعم الفني عن بُعد لحل مشاكل الأجهزة والبرامج بطريقة آمنة وسريعة. متاحون للمساعدة في أي وقت.",
+                features: [
+                    "اتصال آمن ومشفر",
+                    "تشخيص سريع للمشاكل",
+                    "إصلاح فوري للأعطال",
+                    "تدريب على البرامج",
+                    "متاح 24/7",
+                    "دعم متعدد اللغات"
+                ]
+            },
+            systemDesign: {
+                title: "إعداد وتصميم مخططات الأنظمة",
+                subtitle: "تحليل احترافي وبنية تقنية متكاملة",
+                icon: "fas fa-project-diagram text-teal-600",
+                brief: "نصمم مخططات دقيقة تسهّل فهم وتطوير الأنظمة",
+                description: "نقدم خدمة إعداد وتصميم مخططات الأنظمة باستخدام منهجيات تحليل متقدمة مثل UML وDFD. نوثق العمليات، نحدد المتطلبات، ونرسم العلاقات بين مكونات النظام لضمان فهم شامل وبنية واضحة تسهّل مراحل التطوير والبرمجة.",
+                features: [
+                    "تحليل شامل لمتطلبات النظام",
+                    "مخططات UML احترافية (Use Case, Class, Sequence...)",
+                    "مخططات تدفق البيانات (DFD)",
+                    "توثيق العلاقات بين المكونات",
+                    "دعم اتخاذ القرار التقني",
+                    "إعداد ملفات توثيق قابلة للمشاركة والتعديل"
+                ]
+            }
+        };
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        const projectDetails = {
+            library: {
+                title: 'نظام إدارة المكتبة الإلكتروني',
+                subtitle: 'إدارة شاملة للمكتبات الرقمية',
+                icon: 'fas fa-book text-blue-600',
+                brief: 'فهرسة، إعارة، وتقارير في نظام واحد',
+                description: 'نظام لإدارة الكتب والمستعيرين وعمليات الإعارة والإرجاع، مع بحث سريع وتقارير تساعد المكتبة على متابعة المخزون والغرامات.',
+                features: ['فهرسة الكتب', 'نظام إعارة وإرجاع', 'حساب المستفيدين', 'تقارير يومية', 'بحث متقدم', 'صلاحيات متعددة']
+            },
+            brain: {
+                title: 'النظام الآلي لكشف وتصنيف أورام الدماغ',
+                subtitle: 'ذكاء اصطناعي للتشخيص المساند',
+                icon: 'fas fa-brain text-pink-600',
+                brief: 'تحليل صور الرنين المغناطيسي بدقة عالية',
+                description: 'مشروع بحثي وتصنيفي يستخدم خوارزميات معالجة الصور والتعلم الآلي لكشف وتصنيف أورام الدماغ، استناداً إلى بحث منشور حقق دقة تجاوزت 98%.',
+                features: ['تحليل صور MRI', 'استخراج السمات', 'تصنيف الأورام', 'واجهة نتائج واضحة', 'دقة تصنيف مرتفعة', 'قابل للتوثيق الأكاديمي']
+            },
+            chat: {
+                title: 'نظام شات متقدم بلغة جافا',
+                subtitle: 'تراسل فوري عبر الشبكات',
+                icon: 'fab fa-java text-green-600',
+                brief: 'رسائل وملفات مع تشفير أساسي',
+                description: 'تطبيق تراسل يعتمد على Socket Programming لدعم المحادثات النصية ومشاركة الملفات بين عدة مستخدمين في بيئة محلية أو شبكية.',
+                features: ['دردشة جماعية', 'مشاركة ملفات', 'إدارة الجلسات', 'تشفير الرسائل', 'واجهة سطح مكتب', 'سجل محادثات']
+            },
+            school: {
+                title: 'نظام إدارة الطلاب للمدارس',
+                subtitle: 'منصة مدرسية متكاملة',
+                icon: 'fas fa-school text-yellow-600',
+                brief: 'طلاب، درجات، وتقارير تفصيلية',
+                description: 'نظام لإدارة بيانات الطلاب والجداول والدرجات والحضور، مع استخراج تقارير تساعد الإدارة والمعلمين وأولياء الأمور.',
+                features: ['سجل الطلاب', 'رصد الدرجات', 'الحضور والغياب', 'تقارير أكاديمية', 'صلاحيات المستخدمين', 'واجهة سهلة']
+            },
+            eye: {
+                title: 'نظام بصمة العين المتقدم',
+                subtitle: 'مصادقة بيومترية',
+                icon: 'fas fa-eye text-purple-600',
+                brief: 'تحقق عالي الدقة من هوية المستخدم',
+                description: 'نظام أمان يعتمد على خصائص قزحية العين للتحقق من الهوية، مناسب للتطبيقات البحثية وأنظمة التحكم في الوصول.',
+                features: ['التقاط صورة العين', 'استخراج السمات', 'مطابقة البصمة', 'عتبة دقة قابلة للضبط', 'MATLAB و Python', 'سجلات تحقق']
+            },
+            medical: {
+                title: 'نظام إدارة السجلات الطبية',
+                subtitle: 'منصة صحية إلكترونية',
+                icon: 'fas fa-file-medical text-cyan-600',
+                brief: 'سجلات ومواعيد وتقارير طبية',
+                description: 'منصة لإدارة ملفات المرضى والمواعيد والوصفات، مع التركيز على سهولة الاستخدام وتنظيم البيانات الطبية.',
+                features: ['ملفات المرضى', 'جدولة المواعيد', 'سجل الزيارات', 'تقارير طبية', 'بحث سريع', 'واجهة ويب']
+            },
+            patient: {
+                title: 'نظام إدارة المرضى',
+                subtitle: 'عيادات ومراكز طبية',
+                icon: 'fas fa-user-md text-cyan-600',
+                brief: 'بيانات المرضى والمواعيد',
+                description: 'نظام لإدارة بيانات المرضى والمواعيد والزيارات بواجهة بسيطة تناسب العيادات والمراكز الصغيرة والمتوسطة.',
+                features: ['تسجيل المرضى', 'حجز المواعيد', 'سجل الزيارات', 'بحث سريع', 'واجهة سهلة', 'تقارير أساسية']
+            },
+            ehr: {
+                title: 'السجل الصحي الإلكتروني',
+                subtitle: 'تبادل آمن للبيانات الطبية',
+                icon: 'fas fa-file-medical-alt text-green-600',
+                brief: 'تخزين وإدارة المعلومات الصحية',
+                description: 'نظام رقمي لتخزين المعلومات الصحية وإدارتها مع التركيز على التنظيم وإمكانية مشاركة البيانات بشكل مضبوط.',
+                features: ['سجل صحي موحد', 'تاريخ طبي', 'إدارة الصلاحيات', 'تبادل بيانات', 'أرشفة رقمية', 'واجهة ويب']
+            }
+        };
+
+        // Function to set language
+        function setLanguage(lang) {
+            isArabic = (lang === 'ar');
+            const elements = document.querySelectorAll('[data-ar][data-en]');
+            const langText = document.getElementById('langText');
+            
+            elements.forEach(element => {
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.placeholder = isArabic ? element.getAttribute('data-ar') : element.getAttribute('data-en');
+                } else {
+                    element.textContent = isArabic ? element.getAttribute('data-ar') : element.getAttribute('data-en');
+                }
+            });
+
+            document.querySelectorAll('[data-ar-label][data-en-label]').forEach(element => {
+                element.setAttribute('aria-label', isArabic ? element.getAttribute('data-ar-label') : element.getAttribute('data-en-label'));
+            });
+            
+            langText.textContent = isArabic ? 'English' : 'عربي';
+            document.documentElement.setAttribute('dir', isArabic ? 'rtl' : 'ltr');
+            document.documentElement.setAttribute('lang', isArabic ? 'ar-sa' : 'en');
+            document.title = isArabic
+                ? 'أبوبكر حسان | مهندس برمجيات | حلول تقنية مبتكرة'
+                : 'Abobakr Hassan | Software Engineer | Technical Solutions';
+            const servicesToggle = document.getElementById('toggleBtn');
+            if (servicesToggle) {
+                servicesToggle.textContent = isExpanded
+                    ? (isArabic ? 'إخفاء الخدمات' : 'Show less')
+                    : (isArabic ? 'عرض المزيد' : 'Show more');
+            }
+            
+            // Save language preference
+            localStorage.setItem('language', lang);
+        }
+
+        // Theme Toggle
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Language Toggle
+        document.getElementById('langToggle').addEventListener('click', () => {
+            setLanguage(isArabic ? 'en' : 'ar');
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const isOpen = mobileMenu.classList.toggle('hidden') === false;
+            document.getElementById('mobileMenuToggle').setAttribute('aria-expanded', String(isOpen));
+        });
+
+        // Mobile nav links - close menu when clicked
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+                document.getElementById('mobileMenuToggle').setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Initialize theme and language
+        const savedTheme = localStorage.getItem('theme');
+        const savedLanguage = localStorage.getItem('language') || 'ar';
+        
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+        
+        setLanguage(savedLanguage);
+
+        const toggleableSections = ['about', 'services', 'skills', 'projects', 'testimonials', 'contact', 'faq'];
+
+        function setSectionOpen(sectionId, open) {
+            const section = document.getElementById(sectionId);
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = section ? section.querySelector('.section-header') : null;
+            const toggle = section ? section.querySelector('.section-toggle') : null;
+            if (!section || !content || !header) return;
+            content.classList.toggle('is-open', open);
+            section.classList.toggle('is-open', open);
+            header.setAttribute('aria-expanded', open ? 'true' : 'false');
+            if (toggle) toggle.classList.toggle('rotated', open);
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            if (!content) return;
+            const willOpen = !content.classList.contains('is-open');
+            toggleableSections.forEach(id => setSectionOpen(id, id === sectionId && willOpen));
+        }
+
+        function openSection(sectionId) {
+            if (!toggleableSections.includes(sectionId)) return;
+            toggleableSections.forEach(id => setSectionOpen(id, id === sectionId));
+        }
+
+        document.querySelectorAll('.section-header[data-section]').forEach(header => {
+            header.addEventListener('click', () => toggleSection(header.dataset.section));
+            header.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleSection(header.dataset.section);
+                }
+            });
+        });
+
+        const initialHash = (location.hash || '').replace('#', '');
+        if (toggleableSections.includes(initialHash)) {
+            openSection(initialHash);
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').substring(1);
+                if (!targetId) return;
+                e.preventDefault();
+                if (targetId === 'home') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    return;
+                }
+                if (toggleableSections.includes(targetId)) {
+                    openSection(targetId);
+                }
+                const target = document.getElementById(targetId);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 60);
+                }
+            });
+        });
+
+        // Scroll indicator and back to top
+        window.addEventListener('scroll', () => {
+            const docHeight = document.body.scrollHeight;
+            const winHeight = window.innerHeight;
+            const scrollPos = window.scrollY;
+            const scrolled = (scrollPos / (docHeight - winHeight)) * 100;
+            
+            document.querySelector('.scroll-indicator').style.transform = `scaleX(${scrolled / 100})`;
+
+            const luxuryNav = document.querySelector('.luxury-nav');
+            if (luxuryNav) {
+                luxuryNav.classList.toggle('is-scrolled', scrollPos > 12);
+            }
+            
+            const backToTop = document.getElementById('backToTop');
+            if (scrollPos > 300) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible');
+                backToTop.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        // Back to top button
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Intersection Observer for animations
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, {
+            threshold: 0.1,
+            rootMargin: '0px'
+        });
+
+        // Observe animated elements
+        document.querySelectorAll('.animate-fade-in, .animate-slide-up, .animate-scale-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                }
+            });
+        });
+
+        // Services functionality
+        const toggleBtn = document.getElementById("toggleBtn");
+        const hiddenServices = document.querySelectorAll(".hidden-service");
+
+        if (toggleBtn) {
+            toggleBtn.addEventListener("click", () => {
+                isExpanded = !isExpanded;
+                hiddenServices.forEach(card => card.classList.toggle("is-visible", isExpanded));
+                toggleBtn.textContent = isExpanded
+                    ? (isArabic ? 'إخفاء الخدمات' : 'Show less')
+                    : (isArabic ? 'عرض المزيد' : 'Show more');
+            });
+        }
+
+        // Service Modal functionality
+        const modal = document.getElementById('serviceModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const detailBtns = document.querySelectorAll('.details-btn');
+
+        detailBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const serviceType = btn.dataset.service;
+                const service = serviceDetails[serviceType];
+
+                if (service) {
+                    openDetailsModal(service);
+                }
+            });
+        });
+
+        function openDetailsModal(item) {
+            if (!item || !modal) return;
+            document.getElementById('modalTitle').textContent = item.title;
+            document.getElementById('modalSubtitle').textContent = item.subtitle;
+            document.getElementById('modalIcon').className = item.icon;
+            document.getElementById('modalBrief').textContent = item.brief;
+            document.getElementById('modalDescription').textContent = item.description;
+
+            const featuresContainer = document.getElementById('modalFeatures');
+            featuresContainer.innerHTML = '';
+            item.features.forEach(feature => {
+                const featureDiv = document.createElement('div');
+                featureDiv.className = 'flex items-center text-sm text-gray-700 dark:text-gray-300';
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-check text-green-500 ml-2';
+                const span = document.createElement('span');
+                span.textContent = feature;
+                featureDiv.append(icon, span);
+                featuresContainer.appendChild(featureDiv);
+            });
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            document.getElementById('closeModal')?.focus();
+        }
+
+        function closeModal() {
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', closeModal);
+        }
+
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        }
+
+        document.querySelectorAll('.project-details-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                openDetailsModal(projectDetails[btn.dataset.project]);
+            });
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeModal();
+        });
+
+        document.querySelectorAll('img[data-fallback]').forEach(img => {
+            img.addEventListener('error', function handleImageError() {
+                this.removeEventListener('error', handleImageError);
+                const iconName = this.dataset.fallback || 'image';
+                const fallback = document.createElement('div');
+                fallback.className = 'img-fallback';
+                fallback.setAttribute('role', 'img');
+                fallback.setAttribute('aria-label', this.alt || '');
+                fallback.innerHTML = `<i class="fas fa-${iconName}"></i>`;
+                this.replaceWith(fallback);
+            });
+        });
+
+        // Project filter functionality
+        document.querySelectorAll('[data-filter]').forEach(filter => {
+            filter.addEventListener('click', function() {
+                const filterValue = this.getAttribute('data-filter');
+                const projects = document.querySelectorAll('.project-card');
+                
+                // Update active filter button
+                document.querySelectorAll('[data-filter]').forEach(btn => {
+                    btn.classList.remove('bg-white', 'dark:bg-gray-700', 'text-primary-600', 'dark:text-primary-400', 'shadow-sm');
+                    btn.classList.add('text-gray-600', 'dark:text-gray-300', 'hover:bg-white', 'dark:hover:bg-gray-700');
+                });
+                
+                this.classList.remove('text-gray-600', 'dark:text-gray-300', 'hover:bg-white', 'dark:hover:bg-gray-700');
+                this.classList.add('bg-white', 'dark:bg-gray-700', 'text-primary-600', 'dark:text-primary-400', 'shadow-sm');
+                
+                // Filter projects
+                projects.forEach(project => {
+                    if (filterValue === 'all' || project.getAttribute('data-category') === filterValue) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Skills circle animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const skillCircles = document.querySelectorAll('.skill-circle');
+
+            const skillObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const circle = entry.target.querySelector('.progress-ring');
+                        const radius = circle.r.baseVal.value;
+                        const circumference = 2 * Math.PI * radius;
+                        const percent = entry.target.dataset.percent;
+                        const offset = circumference - (percent / 100) * circumference;
+                        
+                        circle.style.strokeDashoffset = offset;
+                        skillObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            skillCircles.forEach(circle => {
+                skillObserver.observe(circle);
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const honey = this.querySelector('[name="_honey"]');
+                if (honey && honey.value) return;
+
+                const submitBtn = document.getElementById('contactSubmit');
+                const formData = {
+                    name: document.getElementById('name').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    subject: document.getElementById('subject').value.trim(),
+                    message: document.getElementById('message').value.trim(),
+                    _replyto: document.getElementById('email').value.trim(),
+                    _template: "table"
+                };
+
+                if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+                    return;
+                }
+
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+                }
+
+                const showStatus = (ok) => {
+                    const safeName = escapeHtml(formData.name);
+                    const box = document.createElement('div');
+                    box.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+                    box.innerHTML = `
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+                            <div class="text-center">
+                                <i class="fas ${ok ? 'fa-check-circle text-green-500' : 'fa-exclamation-triangle text-red-500'} text-4xl mb-4"></i>
+                                <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-2">${ok ? (isArabic ? 'تم الإرسال بنجاح!' : 'Message Sent Successfully!') : (isArabic ? 'تعذر الإرسال' : 'Sending Failed!')}</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-4">${ok ? (isArabic ? `شكراً ${safeName}، تم استلام رسالتك وسأرد عليك قريباً.` : `Thank you ${safeName}, your message has been received.`) : (isArabic ? 'حدث خطأ أثناء الإرسال. يرجى التواصل عبر واتساب.' : 'An error occurred. Please contact via WhatsApp.')}</p>
+                                <button type="button" class="px-4 py-2 ${ok ? 'bg-primary-500 hover:bg-primary-600' : 'bg-red-500 hover:bg-red-600'} text-white rounded transition-colors duration-300">${isArabic ? 'حسناً' : 'OK'}</button>
+                            </div>
+                        </div>
+                    `;
+                    box.querySelector('button').addEventListener('click', () => box.remove());
+                    document.body.appendChild(box);
+                };
+
+                fetch('https://formsubmit.co/ajax/engabobakrh@gmail.com', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Form submission failed with status ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(() => {
+                    showStatus(true);
+                    this.reset();
+                })
+                .catch(() => {
+                    showStatus(false);
+                })
+                .finally(() => {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+                    }
+                });
+            });
+        }
+
+        const navLinks = document.querySelectorAll('nav a.nav-link[href^="#"]');
+        const observedSections = ['home', 'about', 'services', 'skills', 'projects', 'testimonials', 'contact', 'faq']
+            .map(id => document.getElementById(id))
+            .filter(Boolean);
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                navLinks.forEach(link => {
+                    link.classList.toggle('active-link', link.getAttribute('href') === `#${entry.target.id}`);
+                });
+            });
+        }, { rootMargin: '-40% 0px -50% 0px', threshold: 0.1 });
+        observedSections.forEach(section => navObserver.observe(section));
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (!localStorage.getItem('theme')) {
+                if (event.matches) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
